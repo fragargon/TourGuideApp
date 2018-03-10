@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- App bar style -->
+    <style name="TourGuideAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:endColor">@color/white</item>
+    </style>
+
+    <!-- Tab layout style -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPrimaryDark</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance category tab style -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:color">#9e9e9e</item>
+    </style>
+
+</resources>
