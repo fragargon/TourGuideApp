@@ -73,18 +73,22 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         intent.putExtra("category",1); // HotelFragment
                         startActivity(intent);
+                        break;
                     case 1:
                         intent.putExtra("category",2); // EventsFragment
                         startActivity(intent);
+                        break;
                     case 2:
                         intent.putExtra("category", 3); // DrinkFragment
                         startActivity(intent);
                     case 3:
                         intent.putExtra("category", 4); // InfoFragment
                         startActivity(intent);
+                        break;
                         default:
                             intent.putExtra("category", 1); // HotelFragment
                             startActivity(intent);
+                            break;
                 }
             }
         });

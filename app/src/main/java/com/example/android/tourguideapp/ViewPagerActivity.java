@@ -27,7 +27,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(this, getSupportFragmentManager());
         /* Set the adapter onto the view pager. */
         vp.setAdapter(adapter);
-        vp.setCurrentItem(category - 1);
+        vp.setCurrentItem(category -1);
 
         /* Find the tab layout that shows the tabs. */
         TabLayout tabLayout = findViewById(R.id.sliding_tabs);
