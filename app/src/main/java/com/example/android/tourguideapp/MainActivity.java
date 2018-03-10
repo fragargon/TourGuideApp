@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         itemListModel.add(new ItemListModel(hotels, R.drawable.cat1, R.drawable.ic_navigate_next));
         itemListModel.add(new ItemListModel(events, R.drawable.cat2, R.drawable.ic_navigate_next));
         itemListModel.add(new ItemListModel(drink, R.drawable.cat3, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(info, R.drawable.cat3, R.drawable.ic_navigate_next));
+        itemListModel.add(new ItemListModel(info, R.drawable.cat4, R.drawable.ic_navigate_next));
 
         /*
          Create {@link ItemListModel} a listView
@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         intent.putExtra("category", 3); // DrinkFragment
                         startActivity(intent);
+                        break;
                     case 3:
                         intent.putExtra("category", 4); // InfoFragment
                         startActivity(intent);

@@ -12,15 +12,15 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class ViewPagerActivity extends AppCompatActivity {
-    /* Declare variable to handle the given position through Intents. */
-    private int category = 1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set the content of the activity to use the category_main.xml layout file.
+        /* Set the content of the activity to use the category_main.xml layout file. */
         setContentView(R.layout.category_main);
+        /* Get the intent parameter*/
+        int category = getIntent().getExtras().getInt("category");
         /* Find the view pager that will allow the user to swipe between fragments. */
         ViewPager vp = findViewById(R.id.viewpager);
         /* Create an adapter that knows which fragment should be shown on each page. */
