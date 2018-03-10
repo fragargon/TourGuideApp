@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_pager"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/image_height_list_view"
+    android:background="@drawable/blur">
+
+    <ImageView
+        android:id="@+id/thumbnail_image"
+        android:layout_width="@dimen/thumbnail_height"
+        android:layout_height="@dimen/thumbnail_height"
+        android:contentDescription="@string/app_name"
+        android:foreground="@drawable/blur"
+        tools:src="@drawable/cat1"
+        android:scaleType="center"/>
+
+    <TextView
+        android:id="@+id/thumbnail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingStart="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingEnd="@dimen/margin_16"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/thumbnail_image"
+        android:layout_toEndOf="@+id/thumbnail_image"
+        android:textSize="36sp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/disti_inkin_regular"
+        tools:text="Brussels \nBrussels"/>
+
+    <ImageView
+        android:id="@+id/thumbnail_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        tools:src="@drawable/ic_action_search"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
