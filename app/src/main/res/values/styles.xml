@@ -10,7 +10,7 @@
 
     <!-- App bar style -->
     <style name="TourGuideAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:endColor">@color/white</item>
+        <item name="android:endColor">@color/opaque_white</item>
     </style>
 
     <!-- Tab layout style -->

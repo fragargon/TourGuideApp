@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"
-        android:foreground="@color/opaque"
+        android:foreground="@drawable/blur"
         tools:src="@drawable/cat1"
         android:scaleType="centerCrop"/>
 
