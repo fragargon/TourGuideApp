@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/image_height_list_view"
+    android:layout_height="@dimen/thumbnail_height"
     android:background="@drawable/blur">
 
     <ImageView
@@ -27,7 +27,7 @@
         android:gravity="center_vertical"
         android:layout_toRightOf="@+id/thumbnail_image"
         android:layout_toEndOf="@+id/thumbnail_image"
-        android:textSize="36sp"
+        android:textSize="@dimen/text_view_size"
         android:textColor="@color/colorPrimary"
         android:fontFamily="@font/disti_inkin_regular"
         tools:text="Brussels \nBrussels"/>
