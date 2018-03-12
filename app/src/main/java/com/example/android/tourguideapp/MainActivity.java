@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /* Declare global variable */
-    String hotels, events, drink, info;
+    String hotels, events, food, info, bar, places;
     TextView title;
     ImageView image, icon;
     GridView gridView;
@@ -37,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
         image = findViewById(R.id.image);
         hotels = getResources().getString(R.string.hotels);
         events = getResources().getString(R.string.events);
-        drink = getResources().getString(R.string.drink);
+        food = getResources().getString(R.string.food);
         info = getResources().getString(R.string.info);
+        bar = getResources().getString(R.string.bar);
+        places = getResources().getString(R.string.places);
 
         /* Display a random image background */
         int imageIndex = (int) (Math.random()* INDEX_IMAGES) +1;
@@ -51,8 +53,10 @@ public class MainActivity extends AppCompatActivity {
         final ArrayList<ItemListModel>itemListModel = new ArrayList<>();
         itemListModel.add(new ItemListModel(hotels, R.drawable.cat1, R.drawable.ic_navigate_next));
         itemListModel.add(new ItemListModel(events, R.drawable.cat2, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(drink, R.drawable.cat3, R.drawable.ic_navigate_next));
+        itemListModel.add(new ItemListModel(food, R.drawable.cat3, R.drawable.ic_navigate_next));
         itemListModel.add(new ItemListModel(info, R.drawable.cat4, R.drawable.ic_navigate_next));
+        itemListModel.add(new ItemListModel(bar, R.drawable.cat5, R.drawable.ic_navigate_next));
+        itemListModel.add(new ItemListModel(places,R.drawable.cat6, R.drawable.ic_navigate_next));
 
         /*
          Create {@link ItemListModel} a gridView
@@ -79,11 +83,19 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 2:
-                        intent.putExtra("category", 3); // DrinkFragment
+                        intent.putExtra("category", 3); // FoodFragment
                         startActivity(intent);
                         break;
                     case 3:
                         intent.putExtra("category", 4); // InfoFragment
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.putExtra("category", 5); // BarFragment
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent.putExtra("category", 6); // PlacesFragment
                         startActivity(intent);
                         break;
                         default:

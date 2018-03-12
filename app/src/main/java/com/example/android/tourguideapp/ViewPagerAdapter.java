@@ -13,10 +13,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     /** Context of the app */
-    private Context myContext;
+    Context myContext;
 
     /** Declare variable to handle the item's position */
-    private final int PAGES = 4;
+    private final int PAGES = 6;
     private String tabTitles[] = new String[PAGES];
 
     /**
@@ -30,8 +30,10 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
         myContext = context;
         tabTitles[0] = context.getString(R.string.hotels);
         tabTitles[1] = context.getString(R.string.events);
-        tabTitles[2] = context.getString(R.string.drink);
+        tabTitles[2] = context.getString(R.string.food);
         tabTitles[3] = context.getString(R.string.info);
+        tabTitles[4] = context.getString(R.string.bar);
+        tabTitles[5] = context.getString(R.string.places);
     }
 
     /**
@@ -54,9 +56,13 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new EventsFragment();
             case 2:
-                return new DrinkFragment();
+                return new FoodFragment();
             case 3:
                 return new InfoFragment();
+            case 4:
+                return new BarFragment();
+            case 5:
+                return new PlacesFragment();
             default:
                 return new HotelFragment();
         }
