@@ -5,7 +5,7 @@ package com.example.android.tourguideapp;
  * Object of this call will have 3 properties:
  * (albumName, artisteName and albumResourceId)
  * {@link ItemListModel} represents a data model class
- * It contains the representation for the gridView and listView
+ * It contains the representation for the grid view and list view.
  * use in TourGuideApp APK
  *
  */

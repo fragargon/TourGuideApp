@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    /* Declare a private variable to set maximum value of imageIndex */
+    /* Declare a private constant variable to set maximum value of INDEX_IMAGES */
     private final int INDEX_IMAGES;
     {
         INDEX_IMAGES = 7;
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     String hotels, events, drink, info;
     TextView title;
     ImageView image, icon;
-    ListView listView;
+    GridView gridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,18 +55,18 @@ public class MainActivity extends AppCompatActivity {
         itemListModel.add(new ItemListModel(info, R.drawable.cat4, R.drawable.ic_navigate_next));
 
         /*
-         Create {@link ItemListModel} a listView
+         Create {@link ItemListModel} a gridView
          the data source is a list of object from the ArrayList.
         */
         ListAdapter adapter = new ListAdapter(this, itemListModel);
-        listView = findViewById(R.id.list_container_main);
-        listView.setAdapter(adapter);
+        gridView = findViewById(R.id.grid_container);
+        gridView.setAdapter(adapter);
 
         /* Create an intent to handle onItemClick position and send it to ViewPagerActivity */
         final Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
 
-        // Bind the abstract method to the ListView and gives parameters to its interface
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        // Bind the abstract method to the gridView and gives parameters to its interface
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {

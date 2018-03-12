@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/thumbnail_height">
+    android:layout_height="@dimen/image_height_header">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/app_name"
-        android:foreground="@drawable/blur"
+        android:foreground="@drawable/grid_blur"
         tools:src="@drawable/cat1"
         android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical|center_horizontal"
-        android:textSize="56sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_alignParentBottom="true"
+        android:textSize="36sp"
         android:textColor="@color/colorAccent"
-        android:fontFamily="@font/disti_inkin_regular"
+        android:fontFamily="@font/disti_inking_bold"
         tools:text="Brussels"/>
 
     <ImageView
@@ -30,13 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
-        android:scaleX="3"
-        android:scaleY="3"
         tools:src="@drawable/ic_navigate_next"
-        android:layout_marginRight="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_margin="@dimen/margin_16"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>

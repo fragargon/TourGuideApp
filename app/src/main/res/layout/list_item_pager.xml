@@ -5,14 +5,14 @@
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
     android:layout_height="@dimen/thumbnail_height"
-    android:background="@drawable/blur">
+    android:background="@drawable/list_blur">
 
     <ImageView
         android:id="@+id/thumbnail_image"
         android:layout_width="@dimen/thumbnail_height"
         android:layout_height="@dimen/thumbnail_height"
         android:contentDescription="@string/app_name"
-        android:foreground="@drawable/blur"
+        android:foreground="@drawable/list_blur"
         tools:src="@drawable/cat1"
         android:scaleType="center"/>
 
@@ -29,7 +29,7 @@
         android:layout_toEndOf="@+id/thumbnail_image"
         android:textSize="@dimen/text_view_size"
         android:textColor="@color/opaque_white"
-        android:fontFamily="@font/disti_inkin_regular"
+        android:fontFamily="@font/disti_inking_regular"
         tools:text="Brussels \nBrussels"/>
 
     <ImageView

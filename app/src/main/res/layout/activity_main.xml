@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
     <ImageView
@@ -11,20 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/image_height_header"
         android:adjustViewBounds="true"
-        android:foreground="@drawable/blur"
+        android:foreground="@drawable/list_blur"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
         android:src="@drawable/bckg1"/>
 
-    <ListView
-        android:id="@+id/list_container_main"
+    <GridView
+        android:id="@+id/grid_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/header_image"
-        android:divider="@color/opaque_black"
-        android:dividerHeight="5dp"
-        android:drawSelectorOnTop="true"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:numColumns="2"
         android:orientation="vertical">
 
-    </ListView>
+    </GridView>
 </RelativeLayout>

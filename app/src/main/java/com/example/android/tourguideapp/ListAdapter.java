@@ -50,7 +50,7 @@ public class ListAdapter extends ArrayAdapter<ItemListModel> {
         View itemListView = convertView;
         if(itemListView == null) {
             itemListView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item_main, parent, false);
+                    R.layout.grid_item, parent, false);
         }
 
         /* Get {@link ItemListModel} object located at this position in the list */
