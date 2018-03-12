@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,12 +17,14 @@ public class MainActivity extends AppCompatActivity {
 
     /* Declare a private constant variable to set maximum value of INDEX_IMAGES */
     private final int INDEX_IMAGES;
+
     {
         INDEX_IMAGES = 7;
     }
 
     /* Declare global variable */
     String hotels, events, food, info, bar, places;
+    String[] categories;
     TextView title;
     ImageView image, icon;
     GridView gridView;
@@ -51,12 +54,17 @@ public class MainActivity extends AppCompatActivity {
 
         /* Create an {@link ArrayList} from ItemListModel Class (constructor) */
         final ArrayList<ItemListModel>itemListModel = new ArrayList<>();
-        itemListModel.add(new ItemListModel(hotels, R.drawable.cat1, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(events, R.drawable.cat2, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(food, R.drawable.cat3, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(info, R.drawable.cat4, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(bar, R.drawable.cat5, R.drawable.ic_navigate_next));
-        itemListModel.add(new ItemListModel(places,R.drawable.cat6, R.drawable.ic_navigate_next));
+        int n = 6;
+        int i;
+        for(i = 0; i < n; i++) {
+            // get the categories string names
+            Resources res = getResources();
+            categories = res.getStringArray(R.array.category);
+            // get the categories drawables
+            int drawableId = getResources().getIdentifier("cat" + (i+1) , "drawable", getPackageName());
+            itemListModel.add(new ItemListModel(categories[i], drawableId, R.drawable.ic_navigate_next));
+        }
+
 
         /*
          Create {@link ItemListModel} a gridView
