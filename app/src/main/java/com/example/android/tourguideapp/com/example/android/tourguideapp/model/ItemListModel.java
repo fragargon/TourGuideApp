@@ -15,6 +15,9 @@ public class ItemListModel {
     /** Name of the title Category */
     private String myTitleName;
 
+    /** Name of the item name Category */
+    private String myItemName;
+
     /** Drawable of the pictures displayed */
     private int myDrawablePicId;
 
@@ -33,9 +36,28 @@ public class ItemListModel {
         myDrawableIconId = drawableIconId;
     }
 
+    /**
+     * Create a new list item object (constructor)
+     * @param titleName is the title of the category
+     * @param itemName is the name of the item in the category
+     * @param drawablePicId is the drawable Id of the image
+     * @param drawableIconId  is the drawable id of the icon
+     */
+    public ItemListModel (String titleName, String itemName, int drawablePicId, int drawableIconId) {
+        myTitleName = titleName;
+        myItemName = itemName;
+        myDrawablePicId = drawablePicId;
+        myDrawableIconId = drawableIconId;
+    }
+
     /** Get the name of the title */
     public String getTitleName () {
         return myTitleName;
+    }
+
+    /** Get the name of the title */
+    public String getItemName () {
+        return myItemName;
     }
 
     /** Get the image resource id of the category */
@@ -53,6 +75,7 @@ public class ItemListModel {
     public String toString () {
         return "ItemListModel{" +
                 "myTitleName='" + myTitleName + '\'' +
+                "myItemName='" + myItemName + '\'' +
                 ", myDrawablePicId=" + myDrawablePicId + '\'' +
                 ", myDrawableIconId=" + myDrawableIconId + '}';
     }

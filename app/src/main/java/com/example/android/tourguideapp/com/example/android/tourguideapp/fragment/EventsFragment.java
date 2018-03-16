@@ -32,11 +32,12 @@ public class EventsFragment extends Fragment {
 
         // Find the views and instantiate Id's
         String title = getResources().getString(R.string.events);
+        String name = getResources().getString(R.string.name);
 
         /* create an arrayList of ItemListModel*/
         final ArrayList<ItemListModel> items = new ArrayList<>();
         for(int i=0; i<10; i++) {
-            items.add(new ItemListModel(title, R.drawable.cat1, R.drawable.ic_action_search));
+            items.add(new ItemListModel(title, name, R.drawable.cat1, R.drawable.ic_action_search));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The

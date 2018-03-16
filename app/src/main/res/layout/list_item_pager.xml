@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/thumbnail_height"
-    android:background="@drawable/list_blur">
+    android:layout_height="@dimen/thumbnail_height">
 
     <ImageView
         android:id="@+id/thumbnail_image"
@@ -14,23 +12,30 @@
         android:contentDescription="@string/app_name"
         android:foreground="@drawable/list_blur"
         tools:src="@drawable/cat1"
-        android:scaleType="center"/>
+        android:scaleType="center" />
 
-    <TextView
-        android:id="@+id/thumbnail_title"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/margin_16"
-        android:paddingStart="@dimen/margin_16"
-        android:paddingRight="@dimen/margin_16"
-        android:paddingEnd="@dimen/margin_16"
-        android:gravity="center_vertical"
+        android:background="@drawable/list_blur"
         android:layout_toRightOf="@+id/thumbnail_image"
         android:layout_toEndOf="@+id/thumbnail_image"
-        android:textSize="@dimen/text_view_size"
-        android:textColor="@color/opaque_white"
-        android:fontFamily="@font/disti_inking_regular"
-        tools:text="Brussels \nBrussels"/>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/thumbnail_title"
+            style="@style/text_list_view"
+            android:gravity="bottom"
+            android:textColor="@color/opaque_white"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/thumbnail_name"
+            style="@style/text_list_view"
+            android:textColor="@color/opaque_white"
+            tools:text="@tools:sample/last_names"/>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/thumbnail_icon"
@@ -40,6 +45,6 @@
         tools:src="@drawable/ic_action_search"
         android:layout_margin="@dimen/margin_8"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentRight="true" />
 
 </RelativeLayout>

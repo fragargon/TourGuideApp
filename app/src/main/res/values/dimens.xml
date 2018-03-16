@@ -2,10 +2,11 @@
 <resources>
     <!-- image dimension -->
     <dimen name="image_height_header">192dp</dimen>
-    <dimen name="thumbnail_height">128dp</dimen>
+    <dimen name="thumbnail_height">92dp</dimen>
     <!-- common dimension -->
     <dimen name="margin_8">8dp</dimen>
     <dimen name="margin_16">16dp</dimen>
     <!-- textView size -->
-    <dimen name="text_view_size">36sp</dimen>
+    <dimen name="text_view_size_36">36sp</dimen>
+    <dimen name="text_view_size_24">24sp</dimen>
 </resources>

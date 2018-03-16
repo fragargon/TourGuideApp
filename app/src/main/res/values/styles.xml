@@ -25,4 +25,15 @@
         <item name="android:color">#9e9e9e</item>
     </style>
 
+    <!-- Text view style -->
+    <style name="text_list_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">@dimen/margin_8</item>
+        <item name="android:layout_marginLeft">@dimen/margin_8</item>
+        <item name="android:textSize">@dimen/text_view_size_24</item>
+        <item name="android:fontFamily">@font/disti_inking_regular</item>
+    </style>
+
 </resources>

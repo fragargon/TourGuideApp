@@ -66,6 +66,12 @@ public class ListAdapterPager extends ArrayAdapter<ItemListModel>{
             titleName.setText(currentList.getTitleName());
         }
 
+        /* Find the TextView, get and set the text from the current itemName object */
+        TextView itemName = itemListViewPager.findViewById(R.id.thumbnail_name);
+        if (currentList != null) {
+            itemName.setText(currentList.getItemName());
+        }
+
         /* Find the ImageView, get and set the image from the current drawable object */
         ImageView drawablePicId = itemListViewPager.findViewById(R.id.thumbnail_image);
         if (currentList != null) {
