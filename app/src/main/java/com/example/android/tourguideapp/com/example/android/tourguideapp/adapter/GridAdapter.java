@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,14 +11,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.R;
+
 import java.util.ArrayList;
 
 /**
- * {@link ListAdapter} is an {@link ArrayAdapter} that provides
+ * {@link GridAdapter} is an {@link ArrayAdapter} that provides
  * the layout for each list based on data source {@link ItemListModel} object.
  */
 
-public class ListAdapter extends ArrayAdapter<ItemListModel> {
+public class GridAdapter extends ArrayAdapter<ItemListModel> {
 
     /* Initialize global variable */
     private Context myContext;
@@ -30,7 +33,7 @@ public class ListAdapter extends ArrayAdapter<ItemListModel> {
      * @param itemList A list of ItemListModel object to display in a list
      */
 
-    public ListAdapter(Activity context, ArrayList<ItemListModel> itemList) {
+    public GridAdapter(Activity context, ArrayList<ItemListModel> itemList) {
         super(context, 0, itemList);
         myContext = context;
     }

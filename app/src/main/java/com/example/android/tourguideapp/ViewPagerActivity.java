@@ -6,6 +6,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.ViewPagerAdapter;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
+
 /**
  * Create an {@link ViewPagerAdapter} activity which shows
  * a view pager with an {@link TabFragment} tab layout.

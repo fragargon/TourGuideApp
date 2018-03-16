@@ -2,18 +2,20 @@
     <string name="app_name">TourGuideApp</string>
     <!-- array main activity -->
     <string-array name="category">
-        <item>Hotel</item>
-        <item>Events</item>
-        <item>Food</item>
         <item>Info</item>
+        <item>Hotels</item>
+        <item>Food</item>
         <item>Bar</item>
+        <item>Events</item>
         <item>Places</item>
     </string-array>
-    <string name="brussels">Brussels</string>
-    <string name="hotels">Hotels</string>
-    <string name="events">Events</string>
-    <string name="food">Food</string>
+
     <string name="info">Info</string>
+    <string name="hotels">Hotels</string>
+    <string name="food">Food</string>
     <string name="bar">Bar</string>
+    <string name="events">Events</string>
     <string name="places">Places</string>
+    <string name="brussels">Brussels</string>
+    <string name="header_text">blablablablablablablablablablablablablablablablablabla \nblablablablablablablablablablablablablablablablablabla \nblablablablablablablablablablablablablablablablablabla</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.com.example.android.tourguideapp.model;
 
 /**
  * Creating a custom class called AlbumItems.

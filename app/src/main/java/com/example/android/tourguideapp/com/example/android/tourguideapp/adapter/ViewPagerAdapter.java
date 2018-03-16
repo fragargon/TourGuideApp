@@ -1,9 +1,20 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.com.example.android.tourguideapp.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.BarFragment;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.EventsFragment;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.FoodFragment;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.HotelFragment;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.InfoFragment;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.PlacesFragment;
+import com.example.android.tourguideapp.R;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
+import com.example.android.tourguideapp.ViewPagerActivity;
 
 /**
  * {@link ViewPagerAdapter} is a {@link FragmentPagerAdapter}
@@ -28,11 +39,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public ViewPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         myContext = context;
-        tabTitles[0] = context.getString(R.string.hotels);
-        tabTitles[1] = context.getString(R.string.events);
+
+        tabTitles[0] = context.getString(R.string.info);
+        tabTitles[1] = context.getString(R.string.hotels);
         tabTitles[2] = context.getString(R.string.food);
-        tabTitles[3] = context.getString(R.string.info);
-        tabTitles[4] = context.getString(R.string.bar);
+        tabTitles[3] = context.getString(R.string.bar);
+        tabTitles[4] = context.getString(R.string.events);
         tabTitles[5] = context.getString(R.string.places);
     }
 
@@ -52,19 +64,19 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new HotelFragment();
+                return new InfoFragment();
             case 1:
-                return new EventsFragment();
+                return new HotelFragment();
             case 2:
                 return new FoodFragment();
             case 3:
-                return new InfoFragment();
-            case 4:
                 return new BarFragment();
+            case 4:
+                return new EventsFragment();
             case 5:
                 return new PlacesFragment();
             default:
-                return new HotelFragment();
+                return new InfoFragment();
         }
     }
 

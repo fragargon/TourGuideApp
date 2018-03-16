@@ -10,6 +10,9 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.GridAdapter;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
          Create {@link ItemListModel} a gridView
          the data source is a list of object from the ArrayList.
         */
-        ListAdapter adapter = new ListAdapter(this, itemListModel);
+        GridAdapter adapter = new GridAdapter(this, itemListModel);
         gridView = findViewById(R.id.grid_container);
         gridView.setAdapter(adapter);
 
@@ -83,11 +86,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        intent.putExtra("category",1); // HotelFragment
+                        intent.putExtra("category",1); // InfoFragment
                         startActivity(intent);
                         break;
                     case 1:
-                        intent.putExtra("category",2); // EventsFragment
+                        intent.putExtra("category",2); // HotelFragment
                         startActivity(intent);
                         break;
                     case 2:
@@ -95,11 +98,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                     case 3:
-                        intent.putExtra("category", 4); // InfoFragment
+                        intent.putExtra("category", 4); // BarFragment
                         startActivity(intent);
                         break;
                     case 4:
-                        intent.putExtra("category", 5); // BarFragment
+                        intent.putExtra("category", 5); // EventsFragment
                         startActivity(intent);
                         break;
                     case 5:
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                         break;
                         default:
-                            intent.putExtra("category", 1); // HotelFragment
+                            intent.putExtra("category", 1); // InfoFragment
                             startActivity(intent);
                             break;
                 }

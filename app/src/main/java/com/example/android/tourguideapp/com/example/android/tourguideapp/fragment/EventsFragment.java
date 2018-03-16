@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp;
+package com.example.android.tourguideapp.com.example.android.tourguideapp.fragment;
 
 
 import android.os.Bundle;
@@ -8,15 +8,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.R;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.ListAdapterPager;
+
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FoodFragment extends Fragment {
+public class EventsFragment extends Fragment {
 
 
-    public FoodFragment() {
+    public EventsFragment() {
         // Required empty public constructor
     }
 
@@ -27,7 +31,7 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.view_pager_main, container, false);
 
         // Find the views and instantiate Id's
-        String title = getResources().getString(R.string.food);
+        String title = getResources().getString(R.string.events);
 
         /* create an arrayList of ItemListModel*/
         final ArrayList<ItemListModel> items = new ArrayList<>();
