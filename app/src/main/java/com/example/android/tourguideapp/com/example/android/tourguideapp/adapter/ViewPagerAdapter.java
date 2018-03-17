@@ -24,7 +24,7 @@ import com.example.android.tourguideapp.ViewPagerActivity;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     /** Context of the app */
-    Context myContext;
+    private Context myContext;
 
     /** Declare variable to handle the item's position */
     private final int PAGES = 6;
@@ -38,7 +38,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
      */
     public ViewPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
-        myContext = context;
+        this.myContext = context;
 
         tabTitles[0] = context.getString(R.string.info);
         tabTitles[1] = context.getString(R.string.hotels);
