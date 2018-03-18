@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /* Declare global variable */
-    String hotels, events, food, info, bar, places;
     String[] categories;
     TextView title;
     ImageView image, icon;
@@ -41,12 +40,6 @@ public class MainActivity extends AppCompatActivity {
         title = findViewById(R.id.title);
         icon = findViewById(R.id.icon);
         image = findViewById(R.id.image);
-        hotels = getResources().getString(R.string.hotels);
-        events = getResources().getString(R.string.events);
-        food = getResources().getString(R.string.food);
-        info = getResources().getString(R.string.info);
-        bar = getResources().getString(R.string.bar);
-        places = getResources().getString(R.string.places);
 
         /* Display a random image background */
         int imageIndex = (int) (Math.random()* INDEX_IMAGES) +1;

@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
-    <!-- array category -->
-    <string-array name="category">
+    <!-- array string category -->
+    <array name="category">
         <item>Info</item>
         <item>Hotels</item>
         <item>Food</item>
         <item>Bar</item>
         <item>Events</item>
         <item>Places</item>
-    </string-array>
+    </array>
 
-    <!-- array category -->
+    <!-- array drawable category -->
     <string-array name="category_pic">
         <item>@drawable/cat1</item>
         <item>@drawable/cat2</item>
