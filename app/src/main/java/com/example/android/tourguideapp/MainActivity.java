@@ -14,7 +14,6 @@ import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter
 import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,16 +40,9 @@ public class MainActivity extends AppCompatActivity {
         icon = findViewById(R.id.icon);
         image = findViewById(R.id.image);
 
-        /* Display a random image background */
-        int imageIndex = (int) (Math.random()* INDEX_IMAGES) +1;
-        String imageIndexToString = String.format(Locale.getDefault(),"%1d", imageIndex);
-        int imageId = getResources().getIdentifier("bckg" + imageIndexToString, "drawable", getPackageName());
-        ImageView image = findViewById(R.id.header_image);
-        image.setImageDrawable(getResources().getDrawable(imageId));
         // get the categories string names
         Resources res = getResources();
         categories = res.getStringArray(R.array.categories_00);
-
 
         /* Create an {@link ArrayList} from Tour Class (constructor) */
         final ArrayList<Tour> Tour = new ArrayList<>();

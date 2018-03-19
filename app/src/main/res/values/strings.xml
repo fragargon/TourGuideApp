@@ -9,5 +9,6 @@
     <string name="places">Places</string>
     <string name="brussels">Brussels</string>
     <string name="name">category item\'s name</string>
-    <string name="header_text">blablablablablablablablablablablablablablablablablabla</string>
+    <string name="header_text">Brussels City Tour</string>
+    <string name="footer_header">Belgium</string>
 </resources>

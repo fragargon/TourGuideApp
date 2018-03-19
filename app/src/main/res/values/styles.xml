@@ -36,4 +36,14 @@
         <item name="android:fontFamily">@font/disti_inking_regular</item>
     </style>
 
+    <!-- Text view style -->
+    <style name="text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">@dimen/margin_8</item>
+        <item name="android:textSize">@dimen/text_view_size_36</item>
+        <item name="android:fontFamily">@font/disti_inking_regular</item>
+    </style>
+
 </resources>

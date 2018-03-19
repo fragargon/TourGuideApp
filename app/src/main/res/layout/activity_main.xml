@@ -1,31 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/header_image"
+    <FrameLayout
+        android:id="@+id/header_text"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/image_height_header"
-        android:adjustViewBounds="true"
-        android:foreground="@drawable/list_blur"
-        android:contentDescription="@string/app_name"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bckg1"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0.7"
+            android:src="@drawable/ic_tour_white"/>
+
+        <TextView
+            style="@style/text_view"
+            android:text="@string/header_text"
+            android:textColor="@color/colorPrimaryDark" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:fillViewport="true">
 
     <GridView
         android:id="@+id/grid_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/header_image"
-        android:verticalSpacing="4dp"
-        android:horizontalSpacing="4dp"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
         android:stretchMode="columnWidth"
-        android:gravity="center"
         android:numColumns="2"
-        android:orientation="vertical">
-
+        android:verticalSpacing="4dp">
     </GridView>
-</RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_view"
+            android:drawableLeft="@drawable/ic_belgium_flags"
+            android:drawableStart="@drawable/ic_belgium_flags"
+            android:drawableRight="@drawable/ic_belgium_flags"
+            android:drawableEnd="@drawable/ic_belgium_flags"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/footer_header"
+            android:textColor="@color/opaque_white" />
+    </LinearLayout>
+</LinearLayout>
