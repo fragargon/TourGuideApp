@@ -75,7 +75,7 @@ public class ListAdapter extends ArrayAdapter<Tour>{
         /* Find the ImageView, get and set the image from the current drawable object */
         ImageView drawablePicId = listViewPager.findViewById(R.id.thumbnail_image);
         if (currentList != null) {
-            drawablePicId.setImageResource(currentList.getDrawablePic());
+            drawablePicId.setImageResource(currentList.getPhotoId());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */

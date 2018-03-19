@@ -1,7 +1,7 @@
 package com.example.android.tourguideapp.com.example.android.tourguideapp.model;
 
 /**
- * Creating a custom class called AlbumItems.
+ * Creating a custom class called Tour.
  * Object of this call will have 3 properties:
  * (albumName, artisteName and albumResourceId)
  * {@link Tour} represents a data model class
@@ -19,7 +19,7 @@ public class Tour {
     private String myItemName;
 
     /** Drawable of the pictures displayed */
-    private int myDrawablePicId;
+    private int myPhotoId;
 
     /** Drawable of the icon displayed */
     private int myDrawableIconId;
@@ -27,12 +27,12 @@ public class Tour {
     /**
      * Create a new list item object (constructor)
      * @param titleName is the title of the category
-     * @param drawablePicId is the drawable Id of the image
+     * @param photoId is the drawable Id of the image
      * @param drawableIconId  is the drawable id of the icon
      */
-    public Tour(String titleName, int drawablePicId, int drawableIconId) {
+    public Tour(String titleName, int photoId, int drawableIconId) {
         myTitleName = titleName;
-        myDrawablePicId = drawablePicId;
+        myPhotoId = photoId;
         myDrawableIconId = drawableIconId;
     }
 
@@ -40,13 +40,13 @@ public class Tour {
      * Create a new list item object (constructor)
      * @param titleName is the title of the category
      * @param itemName is the name of the item in the category
-     * @param drawablePicId is the drawable Id of the image
+     * @param photoId is the drawable Id of the image
      * @param drawableIconId  is the drawable id of the icon
      */
-    public Tour(String titleName, String itemName, int drawablePicId, int drawableIconId) {
+    public Tour(String titleName, String itemName, int photoId, int drawableIconId) {
         myTitleName = titleName;
         myItemName = itemName;
-        myDrawablePicId = drawablePicId;
+        myPhotoId = photoId;
         myDrawableIconId = drawableIconId;
     }
 
@@ -61,8 +61,8 @@ public class Tour {
     }
 
     /** Get the image resource id of the category */
-    public int getDrawablePic () {
-        return myDrawablePicId;
+    public int getPhotoId() {
+        return myPhotoId;
     }
 
     /** Get the icon resource id of the category */
@@ -76,7 +76,7 @@ public class Tour {
         return "Tour{" +
                 "myTitleName='" + myTitleName + '\'' +
                 "myItemName='" + myItemName + '\'' +
-                ", myDrawablePicId=" + myDrawablePicId + '\'' +
+                ", myPhotoId=" + myPhotoId + '\'' +
                 ", myDrawableIconId=" + myDrawableIconId + '}';
     }
 }

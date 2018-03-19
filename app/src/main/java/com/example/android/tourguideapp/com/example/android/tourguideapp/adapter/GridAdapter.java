@@ -50,9 +50,9 @@ public class GridAdapter extends ArrayAdapter<Tour> {
     @Override
     public View getView(int position, View convertView, @Nullable ViewGroup parent) {
         /* Check if the existing view is being reused, otherwise inflate the view */
-        View itemListView = convertView;
-        if(itemListView == null) {
-            itemListView = LayoutInflater.from(getContext()).inflate(
+        View gridView = convertView;
+        if(gridView == null) {
+            gridView = LayoutInflater.from(getContext()).inflate(
                     R.layout.grid_item, parent, false);
         }
 
@@ -60,25 +60,25 @@ public class GridAdapter extends ArrayAdapter<Tour> {
         Tour currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
-        TextView titleName = itemListView.findViewById(R.id.title);
+        TextView titleName = gridView.findViewById(R.id.title);
         if (currentList != null) {
             titleName.setText(currentList.getTitleName());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawablePicId = itemListView.findViewById(R.id.image);
+        ImageView drawablePicId = gridView.findViewById(R.id.image);
         if (currentList != null) {
-            drawablePicId.setImageResource(currentList.getDrawablePic());
+            drawablePicId.setImageResource(currentList.getPhotoId());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawableIconId = itemListView.findViewById(R.id.icon);
+        ImageView drawableIconId = gridView.findViewById(R.id.icon);
         if (currentList != null) {
             drawableIconId.setImageResource(currentList.getDrawableIcon());
         }
 
         /* Return the whole list item layout */
-        return itemListView;
+        return gridView;
     }
 
 }

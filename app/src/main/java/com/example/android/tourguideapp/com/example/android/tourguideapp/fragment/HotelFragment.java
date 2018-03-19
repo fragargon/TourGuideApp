@@ -2,6 +2,8 @@ package com.example.android.tourguideapp.com.example.android.tourguideapp.fragme
 
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,27 +22,37 @@ import java.util.ArrayList;
 public class HotelFragment extends Fragment {
 
     private final int OBJECT_TYPE = 1;
+    private final int INDEX = 10;
 
 
     public HotelFragment() {
         // Required empty public constructor
     }
 
+    public static HotelFragment newInstance() {
+        return new HotelFragment();
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
-        // Find the views and instantiate Id's
-        String [] titleName = getResources().getStringArray(R.array.categories_00);
+        // Find the  Id's and create an array
+        String [] titleName = getResources().getStringArray(R.array.categories_07);
         String [] hotelName = getResources().getStringArray(R.array.categories_02);
 
         /* create an arrayList of Tour*/
         final ArrayList<Tour> items = new ArrayList<>();
-        for(int i=0; i<10; i++) {
-
-            items.add(new Tour(titleName[OBJECT_TYPE], hotelName[i], R.drawable.cat1, R.drawable.ic_action_search));
+        for(int i=0; i<INDEX; i++) {
+            // get the categories drawables
+            int drawableId = getResources().getIdentifier("hotel_" + (i+1), "drawable", getActivity().getPackageName());
+            items.add(new Tour(titleName[1], hotelName[i], drawableId, R.drawable.ic_action_search));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The

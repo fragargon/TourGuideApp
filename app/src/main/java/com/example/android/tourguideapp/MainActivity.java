@@ -47,15 +47,16 @@ public class MainActivity extends AppCompatActivity {
         int imageId = getResources().getIdentifier("bckg" + imageIndexToString, "drawable", getPackageName());
         ImageView image = findViewById(R.id.header_image);
         image.setImageDrawable(getResources().getDrawable(imageId));
+        // get the categories string names
+        Resources res = getResources();
+        categories = res.getStringArray(R.array.categories_00);
+
 
         /* Create an {@link ArrayList} from Tour Class (constructor) */
         final ArrayList<Tour> Tour = new ArrayList<>();
         int n = 6;
         int i;
         for(i = 0; i < n; i++) {
-            // get the categories string names
-            Resources res = getResources();
-            categories = res.getStringArray(R.array.categories_00);
             // get the categories drawables
             int drawableId = getResources().getIdentifier("cat" + (i+1) , "drawable", getPackageName());
             Tour.add(new Tour(categories[i], drawableId, R.drawable.ic_navigate_next));

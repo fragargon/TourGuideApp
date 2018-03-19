@@ -20,7 +20,7 @@
         <item>@drawable/cat6</item>
     </array>
 
-    <!-- array hotel =>  categories_02 = name | categories_03 = address | categories_04 = tel | categories_05 = web | categories_06 = desc. | categories_07 = drawable -->
+    <!-- array hotel =>  categories_02 = name | categories_03 = address | categories_04 = tel | categories_05 = web | categories_06 = desc. | categories_07 = price -->
     <array name="categories_02">
         <item>Hotel Made In Louise</item>
         <item>Hotel des Galeries</item>
@@ -82,19 +82,19 @@
         <item>Boutique-Hotel located in the heart of the Châtelain district in a beautiful 1920's mansion. The place has kept the intimate and exclusive atmosphere of traditional hotels and the quality of the service. The elegant rooms are decorated with fine materials and Italian marble. Each has extra large beds. Odette en Ville has a library and a collection of DVDs and offers daily newspapers. The Hotel Odette en Ville has only eight rooms but all very intimate.</item>
     </array>
     <array name="categories_07">
-        <item>@drawable/hotel_1</item>
-        <item>@drawable/hotel_2</item>
-        <item>@drawable/hotel_3</item>
-        <item>@drawable/hotel_4</item>
-        <item>@drawable/hotel_5</item>
-        <item>@drawable/hotel_6</item>
-        <item>@drawable/hotel_7</item>
-        <item>@drawable/hotel_8</item>
-        <item>@drawable/hotel_9</item>
-        <item>@drawable/hotel_10</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
     </array>
 
-    <!-- array food =>  categories_08 = name | categories_09 = address | categories_10 = tel | categories_11 = web | categories_12 = desc. categories_13 = drawable -->
+    <!-- array food =>  categories_08 = name | categories_09 = address | categories_10 = tel | categories_11 = web | categories_12 = desc. categories_13 = price -->
     <array name="categories_08">
         <item>La Trinacria</item>
         <item>Le Toukoul</item>
@@ -156,20 +156,21 @@
         <item>Au Vieux Bruxelles has been standing in the heart of St. Boniface since 1882, and can easily claim the title of the most Bruxellois restaurant in the area. Its charm is due to its simplicity, where wood-paneled walls, chequered table covers and countless memorabilia scattered around the room transport diners to another era. Expect to see the best of traditional Brussels fare on the menu, from the Gueuze beer carbonnade with chips to the waterzooi chicken stew and some of the best moules frites (mussels with chips) in town. However, be careful not to miss Au Vieux Bruxelles while walking by – the tumbledown exterior and plastic chairs set on the street outside do a great job at camouflaging this hidden gem of a restaurant</item>
     </array>
     <array name="categories_13">
-        <item>@drawable/food_1</item>
-        <item>@drawable/food_2</item>
-        <item>@drawable/food_3</item>
-        <item>@drawable/food_4</item>
-        <item>@drawable/food_5</item>
-        <item>@drawable/food_6</item>
-        <item>@drawable/food_7</item>
-        <item>@drawable/food_8</item>
-        <item>@drawable/food_9</item>
-        <item>@drawable/food_10</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
     </array>
 
 
-    <!-- array Bar =>  categories_14 = name | categories_15 = address | categories_16 = tel | categories_17 = web | categories_18 = desc. | categories_19 = drawable -->
+
+    <!-- array Bar =>  categories_14 = name | categories_15 = address | categories_16 = tel | categories_17 = web | categories_18 = desc. | categories_19 = price -->
     <array name="categories_14">
         <item>Goupil Le Fol</item>
         <item>Le Cercueil</item>
@@ -231,19 +232,20 @@
         <item>On the border with the artsy Sainte-Catherine area, Monk Bar is the place to go if you’re looking for a spacious yet intimate bar with some style. Be sure to keep up-to-date with its schedule of live music and football games shown here, when the bar buzzes with atmosphere.</item>
     </array>
     <array name="categories_19">
-        <item>@drawable/bar_1</item>
-        <item>@drawable/bar_2</item>
-        <item>@drawable/bar_3</item>
-        <item>@drawable/bar_4</item>
-        <item>@drawable/bar_5</item>
-        <item>@drawable/bar_6</item>
-        <item>@drawable/bar_7</item>
-        <item>@drawable/bar_8</item>
-        <item>@drawable/bar_9</item>
-        <item>@drawable/bar_10</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
+        <item>price: from 30€</item>
     </array>
 
-    <!-- array events =>  categories_20 = name | categories_21 = address | categories_22 = tel | categories_23 = web | categories_24 = desc. | categories_25 = drawable -->
+
+    <!-- array events =>  categories_20 = name | categories_21 = address | categories_22 = tel | categories_23 = web | categories_24 = desc. | categories_25 = price -->
     <array name="categories_20">
         <item>Brussels Jazz Weekend</item>
         <item>Music Festival</item>
@@ -295,17 +297,17 @@
         <item>Rich in products coming from the 4 corners of the globe, you will find especially African specialties, Mediterranean but also typical Belgian stands. Real place of excitement where the sales technique is to shout louder than its neighbor, do not venture there if the crowd and the noise bother you. This market also gives pride of place to plants: shrubs, potted plants, flowers, seeds ... Here you will find something to reboost your home or give new life to your tired garden. We also advise you to take a tour through the Spanish specialty store which is at the beginning of the market. If you are fond of chorizo, lomo or others, this little sign should delight your taste buds. One of the most popular stands is the Moroccan pancakes that you compose yourself by choosing three ingredients. Served with a glass of mint tea, do not hesitate to enjoy this gourmet break. You will not be disappointed!</item>
     </array>
     <array name="categories_25">
-        <item>@drawable/events_1</item>
-        <item>@drawable/events_2</item>
-        <item>@drawable/events_3</item>
-        <item>@drawable/events_4</item>
-        <item>@drawable/events_5</item>
-        <item>@drawable/events_6</item>
-        <item>@drawable/events_7</item>
-        <item>@drawable/events_8</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
     </array>
 
-    <!-- array places =>  categories_26 = name | categories_27 = short_desc. | categories_28 = web | categories_29 = desc. | categories_30 = drawable  -->
+    <!-- array places =>  categories_26 = name | categories_27 = short_desc. | categories_28 = web | categories_29 = desc. | categories_30 = price  -->
     <array name="categories_26">
         <item>Grand-Place</item>
         <item>Heysel Park and the Atomium</item>
@@ -386,14 +388,14 @@
             Even today, the Queen's, King's and Princes' Galleries are animated by 6 million passers-by-year. The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
     </array>
     <array name="categories_30">
-        <item>@drawable/places_1</item>
-        <item>@drawable/places_2</item>
-        <item>@drawable/places_3</item>
-        <item>@drawable/places_4</item>
-        <item>@drawable/places_5</item>
-        <item>@drawable/places_6</item>
-        <item>@drawable/places_7</item>
-        <item>@drawable/places_8</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
+        <item>free access</item>
     </array>
 
 </resources>
