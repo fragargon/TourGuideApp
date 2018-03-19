@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.GridAdapter;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -48,30 +48,30 @@ public class MainActivity extends AppCompatActivity {
         ImageView image = findViewById(R.id.header_image);
         image.setImageDrawable(getResources().getDrawable(imageId));
 
-        /* Create an {@link ArrayList} from ItemListModel Class (constructor) */
-        final ArrayList<ItemListModel>itemListModel = new ArrayList<>();
+        /* Create an {@link ArrayList} from Tour Class (constructor) */
+        final ArrayList<Tour> Tour = new ArrayList<>();
         int n = 6;
         int i;
         for(i = 0; i < n; i++) {
             // get the categories string names
             Resources res = getResources();
-            categories = res.getStringArray(R.array.category);
+            categories = res.getStringArray(R.array.categories_00);
             // get the categories drawables
             int drawableId = getResources().getIdentifier("cat" + (i+1) , "drawable", getPackageName());
-            itemListModel.add(new ItemListModel(categories[i], drawableId, R.drawable.ic_navigate_next));
+            Tour.add(new Tour(categories[i], drawableId, R.drawable.ic_navigate_next));
         }
 
 
         /*
-         Create {@link ItemListModel} a gridView
+         Create {@link Tour} a gridView
          the data source is a list of object from the ArrayList.
         */
-        GridAdapter adapter = new GridAdapter(this, itemListModel);
+        GridAdapter adapter = new GridAdapter(this, Tour);
         gridView = findViewById(R.id.grid_container);
         gridView.setAdapter(adapter);
 
-        /* Create an intent to handle onItemClick position and send it to ViewPagerActivity */
-        final Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+        /* Create an intent to handle onItemClick position and send it to PagerActivity */
+        final Intent intent = new Intent(MainActivity.this, PagerActivity.class);
 
         // Bind the abstract method to the gridView and gives parameters to its interface
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -11,17 +11,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 import com.example.android.tourguideapp.R;
 
 import java.util.ArrayList;
 
 /**
  * {@link GridAdapter} is an {@link ArrayAdapter} that provides
- * the layout for each list based on data source {@link ItemListModel} object.
+ * the layout for each list based on data source {@link Tour} object.
  */
 
-public class GridAdapter extends ArrayAdapter<ItemListModel> {
+public class GridAdapter extends ArrayAdapter<Tour> {
 
     /* Initialize global variable */
     private Context myContext;
@@ -30,10 +30,10 @@ public class GridAdapter extends ArrayAdapter<ItemListModel> {
      * The context is used to inflate the layout file.
      * The list is the data we want to populate into the list
      * @param context The current context. Used to inflate the layout.
-     * @param itemList A list of ItemListModel object to display in a list
+     * @param itemList A list of Tour object to display in a list
      */
 
-    public GridAdapter(Activity context, ArrayList<ItemListModel> itemList) {
+    public GridAdapter(Activity context, ArrayList<Tour> itemList) {
         super(context, 0, itemList);
         myContext = context;
     }
@@ -56,8 +56,8 @@ public class GridAdapter extends ArrayAdapter<ItemListModel> {
                     R.layout.grid_item, parent, false);
         }
 
-        /* Get {@link ItemListModel} object located at this position in the list */
-        ItemListModel currentList = getItem(position);
+        /* Get {@link Tour} object located at this position in the list */
+        Tour currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
         TextView titleName = itemListView.findViewById(R.id.title);

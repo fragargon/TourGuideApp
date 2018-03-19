@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- array main category => categories 00=name | categories01=drawable -->
+    <!-- array main category => categories_00 = name | categories_01 = drawable -->
     <array name="categories_00">
-        <item>00</item> <!-- this is a key/value to retrieve the array -->
         <item>Info</item>
         <item>Hotels</item>
         <item>Food</item>
@@ -13,7 +12,6 @@
     </array>
     <!-- array main category -->
     <array name="categories_01">
-        <item>01</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/cat1</item>
         <item>@drawable/cat2</item>
         <item>@drawable/cat3</item>
@@ -22,9 +20,8 @@
         <item>@drawable/cat6</item>
     </array>
 
-    <!-- array hotel =>  categories_02=name | categories_03=address | categories_04=tel | categories_05=web | categories_06=desc. | categories_07=drawable -->
+    <!-- array hotel =>  categories_02 = name | categories_03 = address | categories_04 = tel | categories_05 = web | categories_06 = desc. | categories_07 = drawable -->
     <array name="categories_02">
-        <item>10</item> <!-- this is a key/value to retrieve the array -->
         <item>Hotel Made In Louise</item>
         <item>Hotel des Galeries</item>
         <item>9 Hotel Sablon</item>
@@ -37,7 +34,6 @@
         <item>hotel Odette en Ville</item>
     </array>
     <array name="categories_03">
-        <item>11</item> <!-- this is a key/value to retrieve the array -->
         <item>Rue Veydt 40 - 1050 Brussels</item>
         <item>Rue des Bouchers 38 - 1000 Brussels</item>
         <item>rue de la Paille 2 - 1000 Brussels</item>
@@ -50,7 +46,6 @@
         <item>Rue de Chatelain 25 - 1050 BRUSSELS</item>
     </array>
     <array name="categories_04">
-        <item>12</item> <!-- this is a key/value to retrieve the array -->
         <item>003225374033</item>
         <item>003222137470</item>
         <item>003228800701</item>
@@ -63,7 +58,6 @@
         <item>003226402626</item>
     </array>
     <array name="categories_05">
-        <item>13</item> <!-- this is a key/value to retrieve the array -->
         <item>https://www.madeinlouise.com</item>
         <item>http://hoteldesgaleries.be</item>
         <item>https://www.9-hotel-sablon-brussels.be</item>
@@ -76,7 +70,6 @@
         <item>http://www.odetteenville.be</item>
     </array>
     <array name="categories_06">
-        <item>14</item> <!-- this is a key/value to retrieve the array -->
         <item>Hotel Made in Louise is a three-star hotel located just 300 meters from Avenue Louise in Brussels. From the Louise metro station, you can easily travel through the beautiful city of Brussels. The European Parliament is only a 15-minute walk from the hotel. The 39 modern rooms at the Hotel Made in Louise have a bathroom with a rain shower and free toiletries. Some rooms have bathtubs and other rooms have lovely views of the courtyard. Enjoy the freshly prepared breakfast buffet. There are good restaurants near the hotel.</item>
         <item>Hotel des Galeries is located in the historical heart of Brussels. The hotel is less than a two-minute walk from the Grand Place and Manneken Pis and five minutes from Brussels Central Station. Hotel des Galeries offers 23 modern and soundproofed rooms. The rooms have wooden floors and a dressing room. An iPod dock and a Nespresso coffee machine are available. Each room has a private bathroom with a bath, shower, toiletries and bathrobes. Let yourself be tempted by the à la carte restaurant, 1 Michelin star, it serves only homemade Belgian dishes.</item>
         <item>The 9 Hotel Sablon is not a hotel, it's a marvel in the heart of Brussels. It is in the artistic district of Sablon in Brussels that our new boutique hotel, 9 Hotel Sablon, has been nestled. Faithful to a contemporary and timeless design, this trendy hotel is located in the heart of Brussels, and shakes up all the codes of the traditional hotel industry. Indeed, with artistic inspiration it is like the apartment of an art collector. This boutique hotel in Brussels is a work of the studio Castel Veciana Arquitectura, where from the facade a mark of elegance and simplicity emanates from this place.</item>
@@ -89,7 +82,6 @@
         <item>Boutique-Hotel located in the heart of the Châtelain district in a beautiful 1920's mansion. The place has kept the intimate and exclusive atmosphere of traditional hotels and the quality of the service. The elegant rooms are decorated with fine materials and Italian marble. Each has extra large beds. Odette en Ville has a library and a collection of DVDs and offers daily newspapers. The Hotel Odette en Ville has only eight rooms but all very intimate.</item>
     </array>
     <array name="categories_07">
-        <item>15</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/hotel_1</item>
         <item>@drawable/hotel_2</item>
         <item>@drawable/hotel_3</item>
@@ -102,9 +94,8 @@
         <item>@drawable/hotel_10</item>
     </array>
 
-    <!-- array food =>  categories_08=name | categories_09=address | categories_10=tel | categories_11=web | categories_12=desc. categories_13=drawable -->
+    <!-- array food =>  categories_08 = name | categories_09 = address | categories_10 = tel | categories_11 = web | categories_12 = desc. categories_13 = drawable -->
     <array name="categories_08">
-        <item>20</item> <!-- this is a key/value to retrieve the array -->
         <item>La Trinacria</item>
         <item>Le Toukoul</item>
         <item>La Quincaillerie</item>
@@ -117,7 +108,6 @@
         <item>Au Vieux Bruxelles</item>
     </array>
     <array name="categories_09">
-        <item>21</item> <!-- this is a key/value to retrieve the array -->
         <item>Tomberg 257 - 1200 Brussels</item>
         <item>Rue de Laeken 34 - 1000 Brussels</item>
         <item>Rue du Page 45- 1050 Brussels</item>
@@ -130,7 +120,6 @@
         <item>rue Sainte-Boniface 35 - 1050 Brussels</item>
     </array>
     <array name="categories_10">
-        <item>22</item> <!-- this is a key/value to retrieve the array -->
         <item>003222656276</item>
         <item>003222237377</item>
         <item>00325339833</item>
@@ -143,7 +132,6 @@
         <item>00322503311</item>
     </array>
     <array name="categories_11">
-        <item>23</item> <!-- this is a key/value to retrieve the array -->
         <item>http://www.latrinacria.be</item>
         <item>https://www.toukoul.be</item>
         <item>https://www.quincaillerie.be/</item>
@@ -156,7 +144,6 @@
         <item>http://www.auvieuxbruxelles.com</item>
     </array>
     <array name="categories_12">
-        <item>24</item> <!-- this is a key/value to retrieve the array -->
         <item>The restaurant "La Trinacria" is located in Tomberg. And welcomes you in its Italian setting, to taste its typical Italian dishes. All our dishes are also takeaway, which is why we give the possibility to the customers to order their dishes by telephone and internet. And so come pick them up once ready. We also work with billing (only for companies) do not hesitate to contact us for more information. A business lunch and suggestions will be offered every week with dishes totally different from our menu to satisfy all our customers.</item>
         <item>Ethiopian restaurant and cultural house Toukoul is as beautiful as it is exotic, its fabulous interior designed by Belgian photographer Serge Anton, with sculptures and unique pieces brought straight from Ethiopia. One of the best things about Toukoul is its program of weekend concerts, with jazz, blues and lounge performed by talented local artists. Feast on the best injera (a sourdough pancake) in town, topped with the delectable wot and spicy key wot sauces, or the succulent tibs – fried meats smothered in aromatic spices – while you listen to the soft sounds coming from Toukoul’s intimate stage. Don’t leave without trying the intense Addis Flower cocktail, and make sure you book a table a few days in advance – this is one of the most popular venues in Brussels.</item>
         <item>Named after its location in a historic ironmonger’s shop, La Quincaillerie is a striking example of Art Deco architecture, where elements of brass are coupled with heavy, wooden accents to create an ambiance of times gone by. The cuisine is similar in its approach, combining tradition with contemporary elegance. Start your meal at the exposed oyster bar, and go on to taste carefully prepared French-inspired classics, with ingredients sourced directly from local producers and the restaurant’s own farm in Bresse. Unsurprisingly, La Quincaillerie is a favorite fixture in the elegant Châtelain neighborhood, and a great place to dine after an afternoon spent at the Victor Horta Museum nearby.</item>
@@ -169,7 +156,6 @@
         <item>Au Vieux Bruxelles has been standing in the heart of St. Boniface since 1882, and can easily claim the title of the most Bruxellois restaurant in the area. Its charm is due to its simplicity, where wood-paneled walls, chequered table covers and countless memorabilia scattered around the room transport diners to another era. Expect to see the best of traditional Brussels fare on the menu, from the Gueuze beer carbonnade with chips to the waterzooi chicken stew and some of the best moules frites (mussels with chips) in town. However, be careful not to miss Au Vieux Bruxelles while walking by – the tumbledown exterior and plastic chairs set on the street outside do a great job at camouflaging this hidden gem of a restaurant</item>
     </array>
     <array name="categories_13">
-        <item>25</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/food_1</item>
         <item>@drawable/food_2</item>
         <item>@drawable/food_3</item>
@@ -183,9 +169,8 @@
     </array>
 
 
-    <!-- array Bar =>  categories_14=name | categories_15=address | categories_16=tel | categories_17=web | categories_18=desc. | categories_19=drawable -->
+    <!-- array Bar =>  categories_14 = name | categories_15 = address | categories_16 = tel | categories_17 = web | categories_18 = desc. | categories_19 = drawable -->
     <array name="categories_14">
-        <item>30</item> <!-- this is a key/value to retrieve the array -->
         <item>Goupil Le Fol</item>
         <item>Le Cercueil</item>
         <item>KAFKA</item>
@@ -198,7 +183,6 @@
         <item>Monk Bar</item>
     </array>
     <array name="categories_15">
-        <item>31</item> <!-- this is a key/value to retrieve the array -->
         <item>rue de la violette 22 - 1000 Brussels</item>
         <item>Rue des Harengs 10 - 1000 Brussels</item>
         <item>Rue des Poissonniers 21 - 1000 Brussels</item>
@@ -211,7 +195,6 @@
         <item>Rue Sainte Catherine 42 - 1000 Brussels</item>
     </array>
     <array name="categories_16">
-        <item>32</item> <!-- this is a key/value to retrieve the array -->
         <item>003225111396</item>
         <item>0032497124565</item>
         <item>003225136631</item>
@@ -224,7 +207,6 @@
         <item>003225117511</item>
     </array>
     <array name="categories_17">
-        <item>33</item> <!-- this is a key/value to retrieve the array -->
         <item>https://www.facebook.com/Goupil.Le.Fol</item>
         <item>https://www.facebook.com/pages/Le-Cercueil/135089343226148</item>
         <item>https://www.facebook.com/cafekafkabrussels/</item>
@@ -237,7 +219,6 @@
         <item>http://www.monk.be/</item>
     </array>
     <array name="categories_18">
-        <item>34</item> <!-- this is a key/value to retrieve the array -->
         <item>With an intimist, mysterious and romantic atmosphere, this place is the closest venue you could compare to the state of mind of "Amélie Poulain". You feel like you're at home, sitting on couches even more comfortable than yours. What might be different is the occasional bicycle that is hanging from the ceiling or the family portraits that overlap each other on the walls. The Goupil le Fol is like a bar within a house; or a house within a bar? Weird, but well done.</item>
         <item>For more than 35 years, this is the most unusual meeting place around Grand Pace. A mortuary chamber, all dressed in black, as it should be, with real coffins serving as tables. This bar, far from being morbid, was at first frequented by the Brussels youth, then by the tourists who made this very special place one of their favorite landmarks.</item>
         <item>Kafka is just perfect for starting - or indeed finishing - the night off on a gentle note, despite stocking enough varieties of vodka and national beer to sink a fleet of battle ships.The decor is traditional. Oaken tables, oaken bar, old piano in the corner, panelled booths, a spiral staircase- it is all a welcome corrective to the tired formulae of the modernist.</item>
@@ -250,7 +231,6 @@
         <item>On the border with the artsy Sainte-Catherine area, Monk Bar is the place to go if you’re looking for a spacious yet intimate bar with some style. Be sure to keep up-to-date with its schedule of live music and football games shown here, when the bar buzzes with atmosphere.</item>
     </array>
     <array name="categories_19">
-        <item>35</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/bar_1</item>
         <item>@drawable/bar_2</item>
         <item>@drawable/bar_3</item>
@@ -263,9 +243,8 @@
         <item>@drawable/bar_10</item>
     </array>
 
-    <!-- array events =>  categories_20=name | categories_21=address | categories_22=tel | categories_23=web | categories_24=desc. | categories_25=drawable -->
+    <!-- array events =>  categories_20 = name | categories_21 = address | categories_22 = tel | categories_23 = web | categories_24 = desc. | categories_25 = drawable -->
     <array name="categories_20">
-        <item>40</item> <!-- this is a key/value to retrieve the array -->
         <item>Brussels Jazz Weekend</item>
         <item>Music Festival</item>
         <item>Roller Bike Parade</item>
@@ -276,7 +255,6 @@
         <item>Midi Market</item>
     </array>
     <array name="categories_21">
-        <item>41</item> <!-- this is a key/value to retrieve the array -->
         <item>May 25/26/27</item>
         <item>June 21/22/23/24/25</item>
         <item>From 3rd June to 09th September</item>
@@ -287,7 +265,6 @@
         <item>Every Sunday 6h to 13h30</item>
     </array>
     <array name="categories_22">
-        <item>42</item> <!-- this is a key/value to retrieve the array -->
         <item>Free Festival</item>
         <item>Free Festival</item>
         <item>Free Parade</item>
@@ -298,7 +275,6 @@
         <item>Around Midi Train Station</item>
     </array>
     <array name="categories_23">
-        <item>43</item> <!-- this is a key/value to retrieve the array -->
         <item>http://www.brusselsjazzweekend.be/</item>
         <item>http://www.fetedelamusique.be/</item>
         <item>http://belgiumrollers.com/</item>
@@ -309,7 +285,6 @@
         <item>https://visit.brussels/fr/place/Marche-du-Midi</item>
     </array>
     <array name="categories_24">
-        <item>44</item> <!-- this is a key/value to retrieve the array -->
         <item>The Brussels Jazz Weekend is a free festival that will give numerous jazz fans from the Brussels region and from far beyond, the opportunity to explore the city with the intoxicating, festive and warm sounds of Belgian and international jazz. In open air and in many venues and bars, the public will be able to enjoy live music, jazz in all it's forms: from swing to bebop, blues, rock and world music, depending on the tastes and the inspiration of the musicians who will give the best of themselves in order to make this festival unforgettable.</item>
         <item>June 20, 21 and 22! Note these dates in your diaries because during these three days, a wind of musical madness will blow on the French Community Wallonia-Brussels. For the 19th time in a row, the Music Festival will resume its rights by investing squares, gardens and dead ends to offer you more than 500 free concerts throughout Wallonia and Brussels. Many surprises in perspective: rock, pop, classical, jazz, electronic music, song, ... all the ingredients will be gathered to make this party the rendezvous where everyone will find a shoe to his feet: the big ones, like the little ones . Music lover or amateur dilettante</item>
         <item>Every Friday from June to September, at 19h, this expedition on wheels embarks on a journey through one or more Brussels municipalities. This is the occasion of a beautiful ride on rollerblades or by bike, or on any non-motorized rolling object, on lanes usually reserved for cars. What discover the tunnels of the city differently! The event is also available throughout the country.</item>
@@ -320,7 +295,6 @@
         <item>Rich in products coming from the 4 corners of the globe, you will find especially African specialties, Mediterranean but also typical Belgian stands. Real place of excitement where the sales technique is to shout louder than its neighbor, do not venture there if the crowd and the noise bother you. This market also gives pride of place to plants: shrubs, potted plants, flowers, seeds ... Here you will find something to reboost your home or give new life to your tired garden. We also advise you to take a tour through the Spanish specialty store which is at the beginning of the market. If you are fond of chorizo, lomo or others, this little sign should delight your taste buds. One of the most popular stands is the Moroccan pancakes that you compose yourself by choosing three ingredients. Served with a glass of mint tea, do not hesitate to enjoy this gourmet break. You will not be disappointed!</item>
     </array>
     <array name="categories_25">
-        <item>45</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/events_1</item>
         <item>@drawable/events_2</item>
         <item>@drawable/events_3</item>
@@ -331,9 +305,8 @@
         <item>@drawable/events_8</item>
     </array>
 
-    <!-- array places =>  categories_26=name | categories_27=short_desc. | categories_28=web | categories_29=desc. | categories_30=drawable  -->
+    <!-- array places =>  categories_26 = name | categories_27 = short_desc. | categories_28 = web | categories_29 = desc. | categories_30 = drawable  -->
     <array name="categories_26">
-        <item>50</item> <!-- this is a key/value to retrieve the array -->
         <item>Grand-Place</item>
         <item>Heysel Park and the Atomium</item>
         <item>Cinquantenaire Park</item>
@@ -344,7 +317,6 @@
         <item>Galeries Royales St-Hubert</item>
     </array>
     <array name="categories_27">
-        <item>51</item> <!-- this is a key/value to retrieve the array -->
         <item>Grand Place is the central square of the City of Brussels</item>
         <item>Heysel park, located in the west of Brussels</item>
         <item>The Parc du Cinquantenaire or Jubelpark is not only a park</item>
@@ -355,7 +327,6 @@
         <item>Right next to the Grand-Place, the Galerie de la Reine is home to lots of luxury boutiques</item>
     </array>
     <array name="categories_28">
-        <item>52</item> <!-- this is a key/value to retrieve the array -->
         <item>https://visit.brussels/en/place/Grand-Place</item>
         <item>https://visit.brussels/en/place/Atomium</item>
         <item>https://visit.brussels/en/search?queryText=cinquantenaire</item>
@@ -366,7 +337,6 @@
         <item>http://www.grsh.be/</item>
     </array>
     <array name="categories_29">
-        <item>53</item> <!-- this is a key/value to retrieve the array -->
         <item>Grand-Place, a UNESCO World Heritage Site, is the main tourist attraction of the City of Brussels but its beginnings were less than glamourous. The area was just a swampy sand-bank between two brooks, known as ‘broek sella’ which gave Brussels its name. The sand bank was reclaimed and turned into ‘Niedermerckt’ (lower market) and sold French and English textiles, French wines and German beer.
             In the Middle Ages wooden houses were built around the market and by the 14th century wealthy families took to building stone mansions which led to the market developing into the main commercial administrative centre. The town hall came in 1402 and by now it was also a political centre. This is where dukes, royalty and emperors were received but the square was also the site of executions.
             Today the Grand-Place is a beautiful, wide open cobbled medieval and is Brussels’ main market square. It is a great place to hang out and admire the elegant guildhouses which replaced all the wooden homes. Many have admired its beauty including Victor Hugo and Baudelaire who rhapsodised about its charm and appealing looks.
@@ -416,7 +386,6 @@
             Even today, the Queen's, King's and Princes' Galleries are animated by 6 million passers-by-year. The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
     </array>
     <array name="categories_30">
-        <item>54</item> <!-- this is a key/value to retrieve the array -->
         <item>@drawable/places_1</item>
         <item>@drawable/places_2</item>
         <item>@drawable/places_3</item>

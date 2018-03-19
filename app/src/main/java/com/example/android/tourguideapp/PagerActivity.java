@@ -6,15 +6,15 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.ViewPagerAdapter;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.PagerAdapter;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
 
 /**
- * Create an {@link ViewPagerAdapter} activity which shows
+ * Create an {@link PagerAdapter} activity which shows
  * a view pager with an {@link TabFragment} tab layout.
  */
 
-public class ViewPagerActivity extends AppCompatActivity {
+public class PagerActivity extends AppCompatActivity {
 
     private int category;
 
@@ -34,7 +34,7 @@ public class ViewPagerActivity extends AppCompatActivity {
         /* Find the view pager that will allow the user to swipe between fragments. */
         ViewPager vp = findViewById(R.id.viewpager);
         /* Create an adapter that knows which fragment should be shown on each page. */
-        ViewPagerAdapter adapter = new ViewPagerAdapter(this, getSupportFragmentManager());
+        PagerAdapter adapter = new PagerAdapter(this, getSupportFragmentManager());
 
         /* Set the adapter onto the view pager. */
         vp.setAdapter(adapter);

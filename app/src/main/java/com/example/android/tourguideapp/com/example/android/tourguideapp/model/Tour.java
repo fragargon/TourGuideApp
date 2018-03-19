@@ -4,13 +4,13 @@ package com.example.android.tourguideapp.com.example.android.tourguideapp.model;
  * Creating a custom class called AlbumItems.
  * Object of this call will have 3 properties:
  * (albumName, artisteName and albumResourceId)
- * {@link ItemListModel} represents a data model class
+ * {@link Tour} represents a data model class
  * It contains the representation for the grid view and list view.
  * use in TourGuideApp APK
  *
  */
 
-public class ItemListModel {
+public class Tour {
 
     /** Name of the title Category */
     private String myTitleName;
@@ -30,7 +30,7 @@ public class ItemListModel {
      * @param drawablePicId is the drawable Id of the image
      * @param drawableIconId  is the drawable id of the icon
      */
-    public ItemListModel (String titleName, int drawablePicId, int drawableIconId) {
+    public Tour(String titleName, int drawablePicId, int drawableIconId) {
         myTitleName = titleName;
         myDrawablePicId = drawablePicId;
         myDrawableIconId = drawableIconId;
@@ -43,7 +43,7 @@ public class ItemListModel {
      * @param drawablePicId is the drawable Id of the image
      * @param drawableIconId  is the drawable id of the icon
      */
-    public ItemListModel (String titleName, String itemName, int drawablePicId, int drawableIconId) {
+    public Tour(String titleName, String itemName, int drawablePicId, int drawableIconId) {
         myTitleName = titleName;
         myItemName = itemName;
         myDrawablePicId = drawablePicId;
@@ -70,10 +70,10 @@ public class ItemListModel {
         return myDrawableIconId;
     }
 
-    /** Return the string representation of the (@link ItemListModel) object**/
+    /** Return the string representation of the (@link Tour) object**/
     @Override
     public String toString () {
-        return "ItemListModel{" +
+        return "Tour{" +
                 "myTitleName='" + myTitleName + '\'' +
                 "myItemName='" + myItemName + '\'' +
                 ", myDrawablePicId=" + myDrawablePicId + '\'' +

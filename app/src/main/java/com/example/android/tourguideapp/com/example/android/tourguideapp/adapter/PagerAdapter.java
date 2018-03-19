@@ -5,24 +5,24 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.android.tourguideapp.PagerActivity;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.BarFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.EventsFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.FoodFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.HotelFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.InfoFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.ItemListModel;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.PlacesFragment;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
-import com.example.android.tourguideapp.ViewPagerActivity;
 
 /**
- * {@link ViewPagerAdapter} is a {@link FragmentPagerAdapter}
+ * {@link PagerAdapter} is a {@link FragmentPagerAdapter}
  * that provides the layout for each list based on a data source
- * which is of {@link ItemListModel}
+ * which is of {@link Tour}
  */
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class PagerAdapter extends FragmentPagerAdapter {
     /** Context of the app */
     private Context myContext;
 
@@ -31,12 +31,12 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     private String tabTitles[] = new String[PAGES];
 
     /**
-     * Create a new {@link ViewPagerAdapter} object
+     * Create a new {@link PagerAdapter} object
      * @param context is the context of the app
      * @param fm is the fragment manager that will keep each
      *           fragment's state in the adapter across swipe.
      */
-    public ViewPagerAdapter(Context context, FragmentManager fm) {
+    public PagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.myContext = context;
 
@@ -49,7 +49,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     * Return the total pages of the {@link ViewPagerActivity}.
+     * Return the total pages of the {@link PagerActivity}.
      */
     @Override
     public int getCount() {
@@ -58,7 +58,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     /**
      * Return {@link Fragment} that should be for the given page number.
-     * It is display in {@link ViewPagerActivity}
+     * It is display in {@link PagerActivity}
      */
     @Override
     public Fragment getItem(int position) {
@@ -82,7 +82,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     /**
      * Return {@link TabFragment} that should be for the given page number.
-     * It is display in {@link ViewPagerActivity}
+     * It is display in {@link PagerActivity}
      */
     @Override
     public CharSequence getPageTitle(int position) {
