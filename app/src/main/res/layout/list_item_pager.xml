@@ -3,21 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/thumbnail_height">
+    android:layout_height="108dp"
+    android:background="@drawable/list_blur">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/thumbnail_image"
         android:layout_width="@dimen/thumbnail_height"
         android:layout_height="@dimen/thumbnail_height"
+        android:layout_margin="4dp"
         android:contentDescription="@string/app_name"
-        android:foreground="@drawable/list_blur"
         tools:src="@drawable/cat1"
-        android:scaleType="center" />
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/opaque_white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/list_blur"
         android:layout_toRightOf="@+id/thumbnail_image"
         android:layout_toEndOf="@+id/thumbnail_image"
         android:layout_alignParentBottom="true"
@@ -26,6 +28,7 @@
         <TextView
             android:id="@+id/thumbnail_title"
             style="@style/text_list_view"
+            android:textSize="16sp"
             android:gravity="bottom"
             android:textColor="@color/opaque_white"
             tools:text="@tools:sample/full_names" />
@@ -33,7 +36,8 @@
         <TextView
             android:id="@+id/thumbnail_name"
             style="@style/text_list_view"
-            android:textColor="@color/opaque_white"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"
             tools:text="@tools:sample/last_names"/>
     </LinearLayout>
 

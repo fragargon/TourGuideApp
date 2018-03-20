@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/header_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,33 +15,34 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:alpha="0.5"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_gravity="center_vertical"
+            android:alpha="0.7"
             android:src="@drawable/ic_tour_white"/>
 
         <TextView
-            style="@style/text_view_portrait"
+            style="@style/text_view_landscape"
             android:text="@string/header_text"
             android:textColor="@color/colorPrimaryDark" />
-    </FrameLayout>
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:fillViewport="true">
 
-    <GridView
-        android:id="@+id/grid_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawSelectorOnTop="true"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="4dp"
-        android:horizontalSpacing="4dp"
-        android:numColumns="2">
+        <GridView
+            android:id="@+id/grid_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:drawSelectorOnTop="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3">
 
-    </GridView>
+        </GridView>
     </ScrollView>
 
     <LinearLayout
@@ -52,12 +53,11 @@
         android:orientation="horizontal">
 
         <TextView
-            style="@style/text_view_portrait"
+            style="@style/text_view_landscape"
             android:drawableLeft="@drawable/ic_belgium_flags"
             android:drawableStart="@drawable/ic_belgium_flags"
             android:drawableRight="@drawable/ic_belgium_flags"
             android:drawableEnd="@drawable/ic_belgium_flags"
-            android:gravity="center_horizontal|center_vertical"
             android:text="@string/footer_header"
             android:textColor="@color/opaque_white" />
     </LinearLayout>

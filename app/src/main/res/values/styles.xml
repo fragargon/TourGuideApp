@@ -32,15 +32,24 @@
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginBottom">@dimen/margin_8</item>
         <item name="android:layout_marginLeft">@dimen/margin_8</item>
-        <item name="android:textSize">@dimen/text_view_size_24</item>
         <item name="android:fontFamily">@font/disti_inking_regular</item>
     </style>
 
-    <!-- Text view style -->
-    <style name="text_view">
+    <!-- Text view style portrait -->
+    <style name="text_view_portrait">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">@dimen/margin_8</item>
+        <item name="android:textSize">@dimen/text_view_size_36</item>
+        <item name="android:fontFamily">@font/disti_inking_regular</item>
+    </style>
+
+    <!-- Text view style landscape -->
+    <style name="text_view_landscape">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_margin">@dimen/margin_8</item>
         <item name="android:textSize">@dimen/text_view_size_36</item>
         <item name="android:fontFamily">@font/disti_inking_regular</item>
