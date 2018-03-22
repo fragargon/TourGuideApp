@@ -11,30 +11,31 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 import com.example.android.tourguideapp.R;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
- * {@link GridAdapter} is an {@link ArrayAdapter} that provides
- * the layout for each list based on data source {@link Tour} object.
+ * {@link ListAdapter} is an {@link ArrayAdapter} that provides
+ * the layout for each list based on data source {@link Places} object.
  */
 
 
-public class ListAdapter extends ArrayAdapter<Tour>{
+public class ListAdapter extends ArrayAdapter<Places>{
 
     /* Initialize global variable */
     private Context myContext;
 
-    /**This is a custom constructor.
+    /**
+     * This is a custom constructor.
      * The context is used to inflate the layout file.
      * The list is the data we want to populate into the list
      * @param context The current context. Used to inflate the layout.
-     * @param listPager A list of Tour object to display in a list
+     * @param listPager A list of Places object to display in a list
      */
 
-    public ListAdapter(Activity context, ArrayList<Tour> listPager) {
+    public ListAdapter(Activity context, ArrayList<Places> listPager) {
         super(context, 0, listPager);
         myContext = context;
     }
@@ -54,11 +55,11 @@ public class ListAdapter extends ArrayAdapter<Tour>{
         View listViewPager = convertView;
         if(listViewPager == null) {
             listViewPager = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item_pager, parent, false);
+                    R.layout.list_item, parent, false);
         }
 
-        /* Get {@link Tour} object located at this position in the list */
-        Tour currentList = getItem(position);
+        /* Get {@link Places} object located at this position in the list */
+        Places currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
         TextView titleName = listViewPager.findViewById(R.id.thumbnail_title);
@@ -81,7 +82,7 @@ public class ListAdapter extends ArrayAdapter<Tour>{
         /* Find the ImageView, get and set the image from the current drawable object */
         ImageView drawableIconId = listViewPager.findViewById(R.id.thumbnail_icon);
         if (currentList != null) {
-            drawableIconId.setImageResource(currentList.getDrawableIcon());
+            drawableIconId.setImageResource(currentList.getIconId());
         }
 
         /* Return the whole list item layout */

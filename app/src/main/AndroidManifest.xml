@@ -18,7 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PagerActivity" />
+        <!-- A child of the main activity -->
+        <activity
+            android:name=".PagerActivity"
+            android:label="@string/pager_name"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

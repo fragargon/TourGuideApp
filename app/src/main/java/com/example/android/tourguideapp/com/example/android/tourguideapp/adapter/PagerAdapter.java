@@ -11,7 +11,7 @@ import com.example.android.tourguideapp.com.example.android.tourguideapp.fragmen
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.FoodFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.HotelFragment;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.InfoFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.PlacesFragment;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
@@ -19,7 +19,7 @@ import com.example.android.tourguideapp.com.example.android.tourguideapp.fragmen
 /**
  * {@link PagerAdapter} is a {@link FragmentPagerAdapter}
  * that provides the layout for each list based on a data source
- * which is of {@link Tour}
+ * which is of {@link Places}
  */
 
 public class PagerAdapter extends FragmentPagerAdapter {

@@ -32,7 +32,7 @@
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginBottom">@dimen/margin_8</item>
         <item name="android:layout_marginLeft">@dimen/margin_8</item>
-        <item name="android:fontFamily">@font/disti_inking_regular</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
     </style>
 
     <!-- Text view style portrait -->
@@ -41,8 +41,9 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_margin">@dimen/margin_8</item>
-        <item name="android:textSize">@dimen/text_view_size_36</item>
-        <item name="android:fontFamily">@font/disti_inking_regular</item>
+        <item name="android:textColor">@color/opaque_white</item>
+        <item name="android:textSize">@dimen/text_view_size_24</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
     </style>
 
     <!-- Text view style landscape -->
@@ -51,8 +52,21 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_margin">@dimen/margin_8</item>
-        <item name="android:textSize">@dimen/text_view_size_36</item>
-        <item name="android:fontFamily">@font/disti_inking_regular</item>
+        <item name="android:textColor">@color/opaque_white</item>
+        <item name="android:textSize">@dimen/text_view_size_24</item>
+        <item name="android:fontFamily">@font/permanent_marker</item>
+    </style>
+
+    <!-- Text view style info -->
+    <style name="text_view_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_4</item>
+        <item name="android:layout_marginRight">@dimen/margin_4</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/margin_16</item>
+        <item name="android:fontFamily">@font/poiretone_regular</item>
     </style>
 
 </resources>

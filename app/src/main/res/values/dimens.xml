@@ -13,4 +13,5 @@
     <!-- textView size -->
     <dimen name="text_view_size_36">36sp</dimen>
     <dimen name="text_view_size_24">24sp</dimen>
+    <dimen name="text_view_size_16">16sp</dimen>
 </resources>

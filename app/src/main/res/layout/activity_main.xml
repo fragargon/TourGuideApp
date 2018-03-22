@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- This is the layout displayed on the main activity portrait gridView-->
+
     <FrameLayout
         android:id="@+id/header_text"
         android:layout_width="match_parent"

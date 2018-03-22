@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguideapp.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/hotel_9" />
+
+        <TextView
+            android:id="@+id/detail_address"
+            style="@style/text_view_info"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/detail_image"
+            android:layout_toRightOf="@id/detail_image"
+            android:textSize="14sp"
+            tools:text="rue de la galere 26 \n1000 brussel"
+            android:drawableTop="@drawable/ic_action_home" />
+
+        <TextView
+            android:id="@+id/detail_tel"
+            style="@style/text_view_info"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_toEndOf="@id/detail_image"
+            android:layout_toRightOf="@id/detail_image"
+            android:gravity="center_vertical"
+            android:layout_below="@id/detail_address"
+            android:textSize="14sp"
+            tools:text="00325582600"
+            android:drawableLeft="@drawable/ic_action_phone_start"
+            android:drawableStart="@drawable/ic_action_phone_start" />
+
+        <TextView
+            android:id="@+id/detail_item_name"
+            style="@style/text_view_info"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_toEndOf="@id/detail_image"
+            android:layout_toRightOf="@id/detail_image"
+            android:layout_below="@id/detail_tel"
+            android:textSize="14sp"
+            tools:text="30€/night" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detail_title_name"
+        style="@style/text_view_info"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/margin_8"
+        tools:text="Hotel de la Bonne Esperance" />
+
+    <TextView
+        android:id="@+id/detail_desc"
+        style="@style/text_view_info"
+        android:layout_marginTop="@dimen/margin_32"
+        tools:text="Hotel Made in Louise is a three-star hotel located just 300 meters from Avenue Louise in Brussels. From the Louise metro station, you can easily travel through the beautiful city of Brussels. The European Parliament is only a 15-minute walk from the hotel. The 39 modern rooms at the Hotel Made in Louise have a bathroom with a rain shower and free toiletries. Some rooms have bathtubs and other rooms have lovely views of the courtyard. Enjoy the freshly prepared breakfast buffet. There are good restaurants near the hotele" />
+
+    <TextView
+        android:id="@+id/detail_web"
+        style="@style/text_view_info"
+        android:layout_marginTop="@dimen/margin_32"
+        tools:text="Site Web"
+        android:drawableBottom="@drawable/ic_action_globe"/>
+
+</LinearLayout>

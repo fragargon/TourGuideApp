@@ -2,22 +2,13 @@
 <resources>
 
     <!-- array main category => categories_00 = name | categories_01 = drawable -->
-    <array name="categories_00">
+    <array name="categories_title">
         <item>Info</item>
         <item>Hotels</item>
         <item>Food</item>
         <item>Bar</item>
         <item>Events</item>
         <item>Places</item>
-    </array>
-    <!-- array main category -->
-    <array name="categories_01">
-        <item>@drawable/cat1</item>
-        <item>@drawable/cat2</item>
-        <item>@drawable/cat3</item>
-        <item>@drawable/cat4</item>
-        <item>@drawable/cat5</item>
-        <item>@drawable/cat6</item>
     </array>
 
     <!-- array hotel =>  categories_02 = name | categories_03 = address | categories_04 = tel | categories_05 = web | categories_06 = desc. | categories_07 = price -->
@@ -94,7 +85,7 @@
         <item>price: from 30€</item>
     </array>
 
-    <!-- array food =>  categories_08 = name | categories_09 = address | categories_10 = tel | categories_11 = web | categories_12 = desc. categories_13 = price -->
+    <!-- array food =>  categories_08 = name | categories_09 = address | categories_10 = tel | categories_11 = web | categories_12 = desc. | categories_13 = item -->
     <array name="categories_08">
         <item>La Trinacria</item>
         <item>Le Toukoul</item>
@@ -300,21 +291,21 @@
         <item>free access</item>
         <item>free access</item>
         <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
+        <item>Leisure</item>
+        <item>Historical</item>
+        <item>Leisure</item>
+        <item>Music Festival</item>
+        <item>shopping</item>
     </array>
 
     <!-- array places =>  categories_26 = name | categories_27 = short_desc. | categories_28 = web | categories_29 = desc. | categories_30 = price  -->
     <array name="categories_26">
         <item>Grand-Place</item>
-        <item>Heysel Park and the Atomium</item>
+        <item>The Atomium</item>
         <item>Cinquantenaire Park</item>
         <item>Cathedral St. Gudula</item>
         <item>Mannekepis</item>
-        <item>Royal Museums Of Fine Arts Of Belgium</item>
+        <item>Museums Of Fine Arts</item>
         <item>Sablon and Marolles</item>
         <item>Galeries Royales St-Hubert</item>
     </array>
@@ -388,14 +379,14 @@
             Even today, the Queen's, King's and Princes' Galleries are animated by 6 million passers-by-year. The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
     </array>
     <array name="categories_30">
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
+        <item>Leisure</item>
+        <item>Leisure</item>
+        <item>Leisure</item>
+        <item>Culture</item>
+        <item>Culture</item>
+        <item>Culture</item>
+        <item>shopping</item>
+        <item>shopping</item>
     </array>
 
 </resources>

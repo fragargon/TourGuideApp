@@ -11,17 +11,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Tour;
 import com.example.android.tourguideapp.R;
+import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
  * {@link GridAdapter} is an {@link ArrayAdapter} that provides
- * the layout for each list based on data source {@link Tour} object.
+ * the layout for each list based on data source {@link Places} object.
  */
 
-public class GridAdapter extends ArrayAdapter<Tour> {
+public class GridAdapter extends ArrayAdapter<Places> {
 
     /* Initialize global variable */
     private Context myContext;
@@ -30,10 +30,10 @@ public class GridAdapter extends ArrayAdapter<Tour> {
      * The context is used to inflate the layout file.
      * The list is the data we want to populate into the list
      * @param context The current context. Used to inflate the layout.
-     * @param itemList A list of Tour object to display in a list
+     * @param itemList A list of Places object to display in a list
      */
 
-    public GridAdapter(Activity context, ArrayList<Tour> itemList) {
+    public GridAdapter(Activity context, ArrayList<Places> itemList) {
         super(context, 0, itemList);
         myContext = context;
     }
@@ -56,8 +56,8 @@ public class GridAdapter extends ArrayAdapter<Tour> {
                     R.layout.grid_item, parent, false);
         }
 
-        /* Get {@link Tour} object located at this position in the list */
-        Tour currentList = getItem(position);
+        /* Get {@link Places} object located at this position in the list */
+        Places currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
         TextView titleName = gridView.findViewById(R.id.title);
@@ -74,7 +74,7 @@ public class GridAdapter extends ArrayAdapter<Tour> {
         /* Find the ImageView, get and set the image from the current drawable object */
         ImageView drawableIconId = gridView.findViewById(R.id.icon);
         if (currentList != null) {
-            drawableIconId.setImageResource(currentList.getDrawableIcon());
+            drawableIconId.setImageResource(currentList.getIconId());
         }
 
         /* Return the whole list item layout */
