@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class InfoFragment extends Fragment {
-    private final int CAT = 0;
+    private  final int CATEGORY = 0;
 
     public InfoFragment() {
         // Required empty public constructor
@@ -39,15 +39,16 @@ public class InfoFragment extends Fragment {
         int INDEX = 5;
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.categories_19);
-        String [] barName = getResources().getStringArray(R.array.categories_14);
+        String [] titleName = getResources().getStringArray(R.array.info_desc);
+        String [] itemName = getResources().getStringArray(R.array.info_desc_1);
+        String [] webUrl = getResources().getStringArray(R.array.info_web_1);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
         for(int i=0; i<INDEX; i++) {
             // get the categories drawables
-            int drawableId = getResources().getIdentifier("bar_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[i], barName[i], drawableId));
+            int photoId = getResources().getIdentifier("info_" + (i+1), "drawable", getActivity().getPackageName());
+            items.add(new Places(titleName[i], itemName[i], photoId));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The

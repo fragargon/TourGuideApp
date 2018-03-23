@@ -38,8 +38,8 @@ public class FoodFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.categories_13);
-        String [] foodName = getResources().getStringArray(R.array.categories_08);
+        String [] titleName = getResources().getStringArray(R.array.item_name_2);
+        String [] foodName = getResources().getStringArray(R.array.title_name_2);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();

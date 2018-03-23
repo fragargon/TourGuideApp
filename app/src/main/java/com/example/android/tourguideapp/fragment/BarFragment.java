@@ -38,8 +38,8 @@ public class BarFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.categories_19);
-        String [] barName = getResources().getStringArray(R.array.categories_14);
+        String [] titleName = getResources().getStringArray(R.array.item_name_3);
+        String [] barName = getResources().getStringArray(R.array.title_name_3);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();

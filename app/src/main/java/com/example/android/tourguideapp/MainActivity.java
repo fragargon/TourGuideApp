@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         // get the categories string names
         Resources res = getResources();
-        categories = res.getStringArray(R.array.categories_title);
+        categories = res.getStringArray(R.array.categories);
 
         /* Create an {@link ArrayList} from Places Class (constructor) */
         final ArrayList<Places> Places = new ArrayList<>();

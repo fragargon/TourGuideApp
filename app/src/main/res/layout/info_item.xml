@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
@@ -27,18 +27,18 @@
                 android:layout_marginLeft="@dimen/margin_4"
                 android:layout_gravity="center_vertical"
                 android:scaleType="centerCrop"
-                android:src="@drawable/info_welcome"/>
+                tools:src="@drawable/info_1"/>
 
             <TextView
                 android:id="@+id/info_text"
                 style="@style/text_view_info"
-                android:text="@string/brussels_desc"/>
+                tools:text="@tools:sample/lorem"/>
         </LinearLayout>
 
         <TextView
             android:id="@+id/info_text_2"
             style="@style/text_view_info"
-            android:text="@string/brussels_desc_1"/>
+            tools:text="@tools:sample/lorem/random"/>
 
         <View
             android:layout_width="match_parent"

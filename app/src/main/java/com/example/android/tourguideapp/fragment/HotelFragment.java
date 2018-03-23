@@ -21,6 +21,7 @@ import java.util.ArrayList;
  */
 public class HotelFragment extends Fragment {
     private final int INDEX = 10;
+    private  final int CATEGORY = 1;
 
     public HotelFragment() {
         // Required empty public constructor
@@ -37,8 +38,8 @@ public class HotelFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.categories_07);
-        String [] hotelName = getResources().getStringArray(R.array.categories_02);
+        String [] titleName = getResources().getStringArray(R.array.item_name_1);
+        String [] hotelName = getResources().getStringArray(R.array.title_name_1);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();

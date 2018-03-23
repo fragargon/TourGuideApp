@@ -38,8 +38,8 @@ public class EventsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String[] titleName = getResources().getStringArray(R.array.categories_25);
-        String[] eventsName = getResources().getStringArray(R.array.categories_20);
+        String[] titleName = getResources().getStringArray(R.array.item_name_4);
+        String[] eventsName = getResources().getStringArray(R.array.title_name_4);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
