@@ -1,6 +1,7 @@
 package com.example.android.tourguideapp.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -8,8 +9,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.android.tourguideapp.DetailActivity;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
 import com.example.android.tourguideapp.model.Places;
@@ -21,6 +24,7 @@ import java.util.ArrayList;
  */
 public class BarFragment extends Fragment {
     private final int INDEX = 10;
+    private  final int CATEGORY = 3;
 
     public BarFragment() {
         // Required empty public constructor
@@ -61,6 +65,17 @@ public class BarFragment extends Fragment {
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each word in the list of words.
         listView.setAdapter(listAdapter);
+
+        // Set an listener on each item in the list view
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i = new Intent(getActivity(), DetailActivity.class);
+                i.putExtra("category", CATEGORY);
+                i.putExtra("index", INDEX);
+                startActivity(i);
+            }
+        });
 
         return rootView;
     }
