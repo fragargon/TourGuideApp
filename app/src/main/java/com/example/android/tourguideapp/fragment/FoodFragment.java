@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.fragment;
+package com.example.android.tourguideapp.fragment;
 
 
 import android.os.Bundle;
@@ -11,18 +11,18 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.ListAdapter;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.adapter.ListAdapter;
+import com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HotelFragment extends Fragment {
+public class FoodFragment extends Fragment {
     private final int INDEX = 10;
 
-    public HotelFragment() {
+    public FoodFragment() {
         // Required empty public constructor
     }
 
@@ -31,21 +31,22 @@ public class HotelFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.categories_07);
-        String [] hotelName = getResources().getStringArray(R.array.categories_02);
+        String [] titleName = getResources().getStringArray(R.array.categories_13);
+        String [] foodName = getResources().getStringArray(R.array.categories_08);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
         for(int i=0; i<INDEX; i++) {
             // get the categories drawables
-            int drawableId = getResources().getIdentifier("hotel_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[1], hotelName[i], drawableId, R.drawable.ic_action_search));
+            int drawableId = getResources().getIdentifier("food_" + (i+1), "drawable", getActivity().getPackageName());
+            items.add(new Places(titleName[i], foodName[i], drawableId, R.drawable.ic_action_search));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The

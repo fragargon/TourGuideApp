@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.fragment;
+package com.example.android.tourguideapp.fragment;
 
 
 import android.os.Bundle;

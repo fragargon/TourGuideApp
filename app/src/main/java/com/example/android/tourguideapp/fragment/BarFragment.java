@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.fragment;
+package com.example.android.tourguideapp.fragment;
 
 
 import android.os.Bundle;
@@ -11,18 +11,18 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.ListAdapter;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.adapter.ListAdapter;
+import com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PlacesFragment extends Fragment {
-    private final int INDEX = 8;
+public class BarFragment extends Fragment {
+    private final int INDEX = 10;
 
-    public PlacesFragment() {
+    public BarFragment() {
         // Required empty public constructor
     }
 
@@ -38,15 +38,15 @@ public class PlacesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
 
         // Find the  Id's and create an array
-        String[] titleName = getResources().getStringArray(R.array.categories_30);
-        String[] placesName = getResources().getStringArray(R.array.categories_26);
+        String [] titleName = getResources().getStringArray(R.array.categories_19);
+        String [] barName = getResources().getStringArray(R.array.categories_14);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
-        for (int i = 0; i < INDEX; i++) {
+        for(int i=0; i<INDEX; i++) {
             // get the categories drawables
-            int drawableId = getResources().getIdentifier("places_" + (i + 1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[i], placesName[i], drawableId, R.drawable.ic_action_search));
+            int drawableId = getResources().getIdentifier("bar_" + (i+1), "drawable", getActivity().getPackageName());
+            items.add(new Places(titleName[i], barName[i], drawableId, R.drawable.ic_action_search));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The

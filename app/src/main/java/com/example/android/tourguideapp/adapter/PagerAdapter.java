@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.adapter;
+package com.example.android.tourguideapp.adapter;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -6,15 +6,15 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.android.tourguideapp.PagerActivity;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.BarFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.EventsFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.FoodFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.HotelFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.InfoFragment;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.PlacesFragment;
+import com.example.android.tourguideapp.fragment.BarFragment;
+import com.example.android.tourguideapp.fragment.EventsFragment;
+import com.example.android.tourguideapp.fragment.FoodFragment;
+import com.example.android.tourguideapp.fragment.HotelFragment;
+import com.example.android.tourguideapp.fragment.InfoFragment;
+import com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.fragment.PlacesFragment;
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
+import com.example.android.tourguideapp.fragment.TabFragment;
 
 /**
  * {@link PagerAdapter} is a {@link FragmentPagerAdapter}

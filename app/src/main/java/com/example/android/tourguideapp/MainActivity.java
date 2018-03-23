@@ -10,8 +10,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.GridAdapter;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.adapter.GridAdapter;
+import com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 

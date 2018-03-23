@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.adapter;
+package com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,30 +12,30 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
- * {@link InfoAdapter} is an {@link ArrayAdapter} that provides
+ * {@link GridAdapter} is an {@link ArrayAdapter} that provides
  * the layout for each list based on data source {@link Places} object.
  */
-public class InfoAdapter extends ArrayAdapter<Places>{
+
+public class GridAdapter extends ArrayAdapter<Places> {
+
     /* Initialize global variable */
     private Context myContext;
 
-    /**
-     * This is a custom constructor.
+    /**This is a custom constructor.
      * The context is used to inflate the layout file.
      * The list is the data we want to populate into the list
      * @param context The current context. Used to inflate the layout.
-     * @param listPager A list of Places object to display in a list
+     * @param itemList A list of Places object to display in a list
      */
 
-    public InfoAdapter(Activity context, ArrayList<Places> listPager) {
-        super(context, 0, listPager);
+    public GridAdapter(Activity context, ArrayList<Places> itemList) {
+        super(context, 0, itemList);
         myContext = context;
-
     }
 
     /**
@@ -50,35 +50,35 @@ public class InfoAdapter extends ArrayAdapter<Places>{
     @Override
     public View getView(int position, View convertView, @Nullable ViewGroup parent) {
         /* Check if the existing view is being reused, otherwise inflate the view */
-        View listViewPager = convertView;
-        if(listViewPager == null) {
-            listViewPager = LayoutInflater.from(getContext()).inflate(
-                    R.layout.info_item, parent, false);
+        View gridView = convertView;
+        if(gridView == null) {
+            gridView = LayoutInflater.from(getContext()).inflate(
+                    R.layout.grid_item, parent, false);
         }
 
         /* Get {@link Places} object located at this position in the list */
         Places currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
-        TextView infoText = listViewPager.findViewById(R.id.info_text);
+        TextView titleName = gridView.findViewById(R.id.title);
         if (currentList != null) {
-            infoText.setText(currentList.getTitleName());
-        }
-
-        /* Find the TextView, get and set the text from the current itemName object */
-        TextView infoText2 = listViewPager.findViewById(R.id.info_text_2);
-        if (currentList != null) {
-            infoText2.setText(currentList.getItemName());
+            titleName.setText(currentList.getTitleName());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawablePicId = listViewPager.findViewById(R.id.info_image);
+        ImageView drawablePicId = gridView.findViewById(R.id.image);
         if (currentList != null) {
             drawablePicId.setImageResource(currentList.getPhotoId());
         }
 
+        /* Find the ImageView, get and set the image from the current drawable object */
+        ImageView drawableIconId = gridView.findViewById(R.id.icon);
+        if (currentList != null) {
+            drawableIconId.setImageResource(currentList.getIconId());
+        }
+
         /* Return the whole list item layout */
-        return listViewPager;
+        return gridView;
     }
 
 }

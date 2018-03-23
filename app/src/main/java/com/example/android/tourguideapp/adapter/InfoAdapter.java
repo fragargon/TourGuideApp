@@ -1,4 +1,4 @@
-package com.example.android.tourguideapp.com.example.android.tourguideapp.adapter;
+package com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,18 +12,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.model.Places;
+import com.example.android.tourguideapp.model.Places;
 
 import java.util.ArrayList;
 
 /**
- * {@link ListAdapter} is an {@link ArrayAdapter} that provides
+ * {@link InfoAdapter} is an {@link ArrayAdapter} that provides
  * the layout for each list based on data source {@link Places} object.
  */
-
-
-public class ListAdapter extends ArrayAdapter<Places>{
-
+public class InfoAdapter extends ArrayAdapter<Places>{
     /* Initialize global variable */
     private Context myContext;
 
@@ -35,9 +32,10 @@ public class ListAdapter extends ArrayAdapter<Places>{
      * @param listPager A list of Places object to display in a list
      */
 
-    public ListAdapter(Activity context, ArrayList<Places> listPager) {
+    public InfoAdapter(Activity context, ArrayList<Places> listPager) {
         super(context, 0, listPager);
         myContext = context;
+
     }
 
     /**
@@ -55,37 +53,32 @@ public class ListAdapter extends ArrayAdapter<Places>{
         View listViewPager = convertView;
         if(listViewPager == null) {
             listViewPager = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
+                    R.layout.info_item, parent, false);
         }
 
         /* Get {@link Places} object located at this position in the list */
         Places currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
-        TextView titleName = listViewPager.findViewById(R.id.thumbnail_title);
+        TextView infoText = listViewPager.findViewById(R.id.info_text);
         if (currentList != null) {
-            titleName.setText(currentList.getTitleName());
+            infoText.setText(currentList.getTitleName());
         }
 
         /* Find the TextView, get and set the text from the current itemName object */
-        TextView itemName = listViewPager.findViewById(R.id.thumbnail_name);
+        TextView infoText2 = listViewPager.findViewById(R.id.info_text_2);
         if (currentList != null) {
-            itemName.setText(currentList.getItemName());
+            infoText2.setText(currentList.getItemName());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawablePicId = listViewPager.findViewById(R.id.thumbnail_image);
+        ImageView drawablePicId = listViewPager.findViewById(R.id.info_image);
         if (currentList != null) {
             drawablePicId.setImageResource(currentList.getPhotoId());
-        }
-
-        /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawableIconId = listViewPager.findViewById(R.id.thumbnail_icon);
-        if (currentList != null) {
-            drawableIconId.setImageResource(currentList.getIconId());
         }
 
         /* Return the whole list item layout */
         return listViewPager;
     }
+
 }

@@ -6,8 +6,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.android.tourguideapp.com.example.android.tourguideapp.adapter.PagerAdapter;
-import com.example.android.tourguideapp.com.example.android.tourguideapp.fragment.TabFragment;
+import com.example.android.tourguideapp.adapter.PagerAdapter;
+import com.example.android.tourguideapp.fragment.TabFragment;
 
 /**
  * Create an {@link PagerAdapter} activity which shows
