@@ -36,12 +36,12 @@ public class Places implements Parcelable {
      * This method is use with InfoAdapter
      * @param titleName is the title of the categories.
      * @param itemName   is the picture of the categories.
-     * @param iconId    is the icon display in categories.
+     * @param photoId    is the icon display in categories.
      */
-    public Places(String titleName, String itemName, int iconId) {
+    public Places(String titleName, String itemName, int photoId) {
         this.titleName = titleName;
         this.itemName = itemName;
-        this.iconId = iconId;
+        this.photoId = photoId;
     }
 
     /**

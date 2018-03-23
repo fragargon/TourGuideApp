@@ -64,7 +64,6 @@ public class InfoFragment extends Fragment {
         // {@link ListView} will display list items for each word in the list of words.
         listView.setAdapter(infoAdapter);
 
-
         return rootView;
     }
 
