@@ -23,8 +23,8 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class HotelFragment extends Fragment {
-    private final int INDEX = 10;
-    private  final int CATEGORY = 1;
+    private final int CATEGORY_ID = 1;
+    private final String CATEGORY_NAME = "hotel";
 
     public HotelFragment() {
         // Required empty public constructor
@@ -39,17 +39,18 @@ public class HotelFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
+        int INDEX = 10;
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.item_name_1);
-        String [] hotelName = getResources().getStringArray(R.array.title_name_1);
+        String [] titleName = getResources().getStringArray(R.array.title_name_1);
+        String [] itemName = getResources().getStringArray(R.array.item_name_1);
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
         for(int i=0; i<INDEX; i++) {
             // get the categories drawables
             int drawableId = getResources().getIdentifier("hotel_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[1], hotelName[i], drawableId, R.drawable.ic_action_search));
+            items.add(new Places(itemName[i], titleName[i], drawableId, R.drawable.ic_action_search));
         }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
@@ -70,8 +71,9 @@ public class HotelFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra("category", CATEGORY);
-                i.putExtra("index", INDEX);
+                i.putExtra("categoryId", CATEGORY_ID);
+                i.putExtra("categoryName", CATEGORY_NAME);
+                i.putExtra("index", position);
                 startActivity(i);
             }
         });

@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
+    android:padding="@dimen/margin_8"
+    android:layout_margin="@dimen/margin_4"
+    android:background="@drawable/background_blur"
     android:orientation="vertical">
 
         <LinearLayout
@@ -12,15 +14,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/info_image"
                 android:layout_width="150dp"
-                android:layout_height="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/margin_8"
                 android:layout_marginRight="@dimen/margin_4"
-                android:layout_marginLeft="@dimen/margin_4"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:layout_marginStart="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="@string/app_name"
-                android:scaleType="centerCrop"
                 tools:src="@drawable/info_1"/>
 
             <TextView
@@ -33,11 +37,5 @@
             android:id="@+id/info_text_2"
             style="@style/text_view_info"
             tools:text="@tools:sample/lorem/random"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/opaque_white"
-            android:layout_marginTop="@dimen/margin_4"/>
 
 </LinearLayout>

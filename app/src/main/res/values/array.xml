@@ -20,7 +20,7 @@
         <item>For travelers who prefer to see the sights rather than bury their nose in a travel guide. there are guided sightseeing and topic tours available all over Brussels.</item>
     </string-array>
     <string-array name="info_desc_1">
-        <item>Belgium\'s fascinating capital, and the administrative capital of the EU, Brussels is historic yet hip, bureaucratic yet bizarre, self confident yet unshowy, and multicultural to its roots. All this plays out in a cityscape that swings from majestic to quirky to rundown and back again. Organic art nouveau facades face off against 1960s concrete developments, and regal 19th-century mansions contrast with the brutal glass of the EU’\s Gotham City. This whole maelstrom swirls out from Brussels’\ medieval core, where the Grand Place is surely one of the world’\s most beautiful squares.</item>
+        <item>Belgium\\'s fascinating capital, and the administrative capital of the EU, Brussels is historic yet hip, bureaucratic yet bizarre, self confident yet unshowy, and multicultural to its roots. All this plays out in a cityscape that swings from majestic to quirky to rundown and back again. Organic art nouveau facades face off against 1960s concrete developments, and regal 19th-century mansions contrast with the brutal glass of the EU’\s Gotham City. This whole maelstrom swirls out from Brussels’\ medieval core, where the Grand Place is surely one of the world’\s most beautiful squares.</item>
         <item>However, since Brussels is a busy European city, you really should have a time reserve and make proper travel research beforehand.There is a train going from Brussels Zaventem Airport to Brussels Central Station every 10 minutes between 5am and midnight, 7 days a week. The ride takes 18 minutes and costs €12,70. However you will need to deal with public transport from the central station to your hotel. If you think you will not like that after a flight then consider the taxi option below.</item>
         <item>You can find a bed in a Brussels hostel for around €17 - €25 per night. There are hostels located 15 minutes walk from the main square, but many are further away. Therefore make sure to look at the map too. Hostel atmosphere is quite friendly and it is a very good place to meet fellow travellers. Many people who travel on their own like to sit in the common room during the evening and chat. Or even plan their sightseeing together.</item>
         <item>It costs €32 for 48 hours and covers most Brussels attractions. Many people choose to do the whole circle around city first. To look around, listen to audioguide (in most world languages) and after that hop off to see the attractions.The Brussels hop-on hop-off bus goes around the city and stops at famous attractions. You can get off-board, check out the attraction and continue the route by getting on another bus whenever you feel like it.</item>
@@ -41,6 +41,13 @@
         <item>@array/title_name_3</item>
         <item>@array/title_name_4</item>
         <item>@array/title_name_5</item>
+    </array>
+    <array name="cat_item_name">
+        <item>@array/item_name_1</item>
+        <item>@array/item_name_2</item>
+        <item>@array/item_name_3</item>
+        <item>@array/item_name_4</item>
+        <item>@array/item_name_5</item>
     </array>
     <array name="cat_address">
         <item>@array/address_1</item>
@@ -63,21 +70,14 @@
         <item>@array/web_4</item>
         <item>@array/web_5</item>
     </array>
-    <array name="cat_desc_1">
+    <array name="cat_desc">
         <item>@array/desc_1</item>
         <item>@array/desc_2</item>
         <item>@array/desc_3</item>
         <item>@array/desc_4</item>
         <item>@array/desc_5</item>
     </array>
-    <array name="cat_item_name">
-        <item>@array/item_name_1</item>
-        <item>@array/item_name_2</item>
-        <item>@array/item_name_3</item>
-        <item>@array/item_name_4</item>
-        <item>@array/item_name_5</item>
-    </array>
-
+    
     <!-- array cat1 => hotel =>  title_name_1 = titleName | address_1 = address | tel_1 = tel | web_1 = web | desc_1 = desc | item_name_1 = itemName -->
     <string-array name="title_name_1">
         <item>Hotel Made In Louise</item>
@@ -130,14 +130,14 @@
     <string-array name="desc_1">
         <item>Hotel Made in Louise is a three-star hotel located just 300 meters from Avenue Louise in Brussels. From the Louise metro station, you can easily travel through the beautiful city of Brussels. The European Parliament is only a 15-minute walk from the hotel. The 39 modern rooms at the Hotel Made in Louise have a bathroom with a rain shower and free toiletries. Some rooms have bathtubs and other rooms have lovely views of the courtyard. Enjoy the freshly prepared breakfast buffet. There are good restaurants near the hotel.</item>
         <item>Hotel des Galeries is located in the historical heart of Brussels. The hotel is less than a two-minute walk from the Grand Place and Manneken Pis and five minutes from Brussels Central Station. Hotel des Galeries offers 23 modern and soundproofed rooms. The rooms have wooden floors and a dressing room. An iPod dock and a Nespresso coffee machine are available. Each room has a private bathroom with a bath, shower, toiletries and bathrobes. Let yourself be tempted by the à la carte restaurant, 1 Michelin star, it serves only homemade Belgian dishes.</item>
-        <item>The 9 Hotel Sablon is not a hotel, it's a marvel in the heart of Brussels. It is in the artistic district of Sablon in Brussels that our new boutique hotel, 9 Hotel Sablon, has been nestled. Faithful to a contemporary and timeless design, this trendy hotel is located in the heart of Brussels, and shakes up all the codes of the traditional hotel industry. Indeed, with artistic inspiration it is like the apartment of an art collector. This boutique hotel in Brussels is a work of the studio Castel Veciana Arquitectura, where from the facade a mark of elegance and simplicity emanates from this place.</item>
+        <item>The 9 Hotel Sablon is not a hotel, it\'s a marvel in the heart of Brussels. It is in the artistic district of Sablon in Brussels that our new boutique hotel, 9 Hotel Sablon, has been nestled. Faithful to a contemporary and timeless design, this trendy hotel is located in the heart of Brussels, and shakes up all the codes of the traditional hotel industry. Indeed, with artistic inspiration it is like the apartment of an art collector. This boutique hotel in Brussels is a work of the studio Castel Veciana Arquitectura, where from the facade a mark of elegance and simplicity emanates from this place.</item>
         <item>Hôtel Saint-Gery is a boutique hotel set in a classic mansion in Brussels city center. I is located next to the lively Antoine Dansaert street and 350 meters from the Grand Place. Hôtel Saint-Gery has 24 modern rooms with modern interiors and original wooden floors. All rooms have a private bathroom with free toiletries. On the ground floor of the hotel you will find the jazz bar De Belmonte. Here you can enjoy music and delicious tapas. You can have breakfast there every morning.</item>
         <item>Hotel The Neufchatel is a boutique hotel that has been decorated by interior designer Manuel Vraux S. Laranjeiro. The hotel is just a five-minute walk from Avenue Louise. By tram, you can easily reach the Grand Place, the Manneken Pis, the Atomium and the BruExpo exhibition grounds. The Neufchatel Hotel is an excellent choice if you like shopping, museums and fine dining. The stylish 20 rooms at The Neufchatel Hotel are tastefully furnished and include a private bathroom with a rain shower. The Saint-Gilles district is the ideal place to visit Brussels and enjoy the many restaurants and cafes.</item>
         <item>Hotel Le Dixseventh is located in the heart of Brussels, just 240 meters from the UNESCO World Heritage Grand Place. The Magritte Museum is just 500 meters from the Hotel Le Dixseventh. The hotel combines historic details with luxurious decor and modern amenities. The 24 elegant rooms of the Hotel Le Dixseptième are fully equipped and some rooms are located in the modern wing of the hotel. Hotel Le Dixseventh has a large public area with a bar (very comfortable chairs) and a fireplace. There is also an intimate garden courtyard.</item>
-        <item>Welcome Hotel is located in the city center of Brussels on Place Sainte-Catherine, known for its many cafes, bars and restaurants. The hotel is just ten minutes walk from the Grand Place. You can travel easily to Brussels from Sainte-Catherine metro station, located near the hotel. The Welcome Hotel offers 16 unique rooms decorated with works of art, it's unique, you'll see! The colorful rooms all include luxurious bathrooms. Start the day with fresh bread and croissants in the Parisian-style café-bar.</item>
+        <item>Welcome Hotel is located in the city center of Brussels on Place Sainte-Catherine, known for its many cafes, bars and restaurants. The hotel is just ten minutes walk from the Grand Place. You can travel easily to Brussels from Sainte-Catherine metro station, located near the hotel. The Welcome Hotel offers 16 unique rooms decorated with works of art, it\'s unique, you\'ll see! The colorful rooms all include luxurious bathrooms. Start the day with fresh bread and croissants in the Parisian-style café-bar.</item>
         <item>Hôtel Espérance in Brussels is a small hotel with 13 rooms. This small Art Deco hotel is quietly located in the heart of Brussels, just off Rue Neuve. Each of its design rooms has a unique style and décor. The bathrooms are luxuriously decorated and feature either a spacious shower or a spa bath. A buffet breakfast is served daily at Esperance Tavern, which features stained glass windows and Art Deco decorations. The staff of the Hotel Esperance is at your disposal and will do everything in its power to make your romantic weekend in Brussels a success.</item>
         <item>Vintage Hotel Brussels is decorated in the style of the 70s. The Vintage also includes an elegant wine bar with character and a spacious terrace in the courtyard, so you do not necessarily need to leave the hotel. On a sunny afternoon, you can enjoy a drink on the terrace for a wonderful time. The 29 rooms of the Vintage Hotel are fully equipped so that even in your living room you will have a good time. Vintage Hotel is just 50 meters from the trendy shopping district of Avenue Louise.</item>
-        <item>Boutique-Hotel located in the heart of the Châtelain district in a beautiful 1920's mansion. The place has kept the intimate and exclusive atmosphere of traditional hotels and the quality of the service. The elegant rooms are decorated with fine materials and Italian marble. Each has extra large beds. Odette en Ville has a library and a collection of DVDs and offers daily newspapers. The Hotel Odette en Ville has only eight rooms but all very intimate.</item>
+        <item>Boutique-Hotel located in the heart of the Châtelain district in a beautiful 1920\'s mansion. The place has kept the intimate and exclusive atmosphere of traditional hotels and the quality of the service. The elegant rooms are decorated with fine materials and Italian marble. Each has extra large beds. Odette en Ville has a library and a collection of DVDs and offers daily newspapers. The Hotel Odette en Ville has only eight rooms but all very intimate.</item>
     </string-array>
     <string-array name="item_name_1">
         <item>price: from 30€</item>
@@ -226,8 +226,6 @@
         <item>price: from 30€</item>
     </string-array>
 
-
-
     <!-- array cat3 => Bar =>  title_name_3 = titleName | address_3 = address | tel_3 = tel | web_3 = web | desc_3 = desc | item_name_3 = itemName -->
     <string-array name="title_name_3">
         <item>Goupil Le Fol</item>
@@ -278,15 +276,15 @@
         <item>http://www.monk.be/</item>
     </string-array>
     <string-array name="desc_3">
-        <item>With an intimist, mysterious and romantic atmosphere, this place is the closest venue you could compare to the state of mind of "Amélie Poulain". You feel like you're at home, sitting on couches even more comfortable than yours. What might be different is the occasional bicycle that is hanging from the ceiling or the family portraits that overlap each other on the walls. The Goupil le Fol is like a bar within a house; or a house within a bar? Weird, but well done.</item>
+        <item>With an intimist, mysterious and romantic atmosphere, this place is the closest venue you could compare to the state of mind of "Amélie Poulain". You feel like you\'re at home, sitting on couches even more comfortable than yours. What might be different is the occasional bicycle that is hanging from the ceiling or the family portraits that overlap each other on the walls. The Goupil le Fol is like a bar within a house; or a house within a bar? Weird, but well done.</item>
         <item>For more than 35 years, this is the most unusual meeting place around Grand Pace. A mortuary chamber, all dressed in black, as it should be, with real coffins serving as tables. This bar, far from being morbid, was at first frequented by the Brussels youth, then by the tourists who made this very special place one of their favorite landmarks.</item>
         <item>Kafka is just perfect for starting - or indeed finishing - the night off on a gentle note, despite stocking enough varieties of vodka and national beer to sink a fleet of battle ships.The decor is traditional. Oaken tables, oaken bar, old piano in the corner, panelled booths, a spiral staircase- it is all a welcome corrective to the tired formulae of the modernist.</item>
-        <item>Smack bang in the middle of the lively cluster of bars and restaurants on Rue St-Boniface, this brasserie has rapidly become a firm favourite among locals, Serving a large array of excellent artisanal beers, a wine list that's particularly strong on French reds and a solid menu of Belgian classics, it attracts a young, if rather eclectic crowd, and has a welcoming, appealing atmosphere; it's a place you'll want to return to again and again.</item>
+        <item>Smack bang in the middle of the lively cluster of bars and restaurants on Rue St-Boniface, this brasserie has rapidly become a firm favourite among locals, Serving a large array of excellent artisanal beers, a wine list that\'s particularly strong on French reds and a solid menu of Belgian classics, it attracts a young, if rather eclectic crowd, and has a welcoming, appealing atmosphere; it\'s a place you\'ll want to return to again and again.</item>
         <item>Café Belga is housed in the former offices of the national radio and television office. This place is like an institution for some people in Brussels who frequent Place Flagey on a daily basis. This is probably the most frequent bar in Place Flagey. It does not matter that this silk morning, noon or evening, you will find your happiness. Between breakfast, Sunday morning brunch, or after-work drink, Belga will delight you.</item>
         <item>Enjoying a 17th century location at the very heart of Brussels, only a few metres away from the legendary Grand’Place, the Music Village has opened its doors on the 1st of September 2000. With acoustics, sound system, lighting, stage, warm welcome, comfort, and food &amp; drink that live up to the most prestigious clubs of New-York and London, the Music Village offers all music fans, listeners and musicians alike, a return to the Golden Age of international jazz clubs.</item>
         <item>In the sixteenth century, the vaulted space currently occupied by the Black Gate, constituted the kitchens of the convent of the Alexians. We can still see a well and a cooler that served the sisters to cook and keep food. The Black Gate is now a place where, in the atmosphere, the products sold and the spirit of the bartenders, we find a Celtic and medieval side that suits so well to its vaults.</item>
         <item>Located in the district of La Cambre, Etiquette is a bar wine not quite like the others: here is self-service! Thanks to a prepaid magnetic card, one chooses his wine and the desired quantity (3, 6 or 12 cl). More than 50 bottles are waiting for us wisely behind a window, kept at a good temperature and kept with nitrogen. The opportunity to test many different wines without (too much) ruin.</item>
-        <item>Notice to fans of surreal atmosphere and retro decor, you will be served. Immersed in another century, flasks and jars of formalin are inspected with a cocktail of Hendrick's gin. Here, beverages are real elixirs that you enjoy with your eyes closed. A barred universe, a real cabinet of curiosities to discover at least once, change of scenery guaranteed.</item>
+        <item>Notice to fans of surreal atmosphere and retro decor, you will be served. Immersed in another century, flasks and jars of formalin are inspected with a cocktail of Hendrick\'s gin. Here, beverages are real elixirs that you enjoy with your eyes closed. A barred universe, a real cabinet of curiosities to discover at least once, change of scenery guaranteed.</item>
         <item>On the border with the artsy Sainte-Catherine area, Monk Bar is the place to go if you’re looking for a spacious yet intimate bar with some style. Be sure to keep up-to-date with its schedule of live music and football games shown here, when the bar buzzes with atmosphere.</item>
     </string-array>
     <string-array name="item_name_3">
@@ -301,7 +299,6 @@
         <item>price: from 30€</item>
         <item>price: from 30€</item>
     </string-array>
-
 
     <!-- array cat4 => events =>  title_name_4 = titleName | address_4 = address | tel_4 = tel | web_4 = web | desc_4 = desc | item_name_4 = itemName -->
     <string-array name="title_name_4">
@@ -345,12 +342,12 @@
         <item>https://goo.gl/ak1Yd2</item>
     </string-array>
     <string-array name="desc_4">
-        <item>The Brussels Jazz Weekend is a free festival that will give numerous jazz fans from the Brussels region and from far beyond, the opportunity to explore the city with the intoxicating, festive and warm sounds of Belgian and international jazz. In open air and in many venues and bars, the public will be able to enjoy live music, jazz in all it's forms: from swing to bebop, blues, rock and world music, depending on the tastes and the inspiration of the musicians who will give the best of themselves in order to make this festival unforgettable.</item>
+        <item>The Brussels Jazz Weekend is a free festival that will give numerous jazz fans from the Brussels region and from far beyond, the opportunity to explore the city with the intoxicating, festive and warm sounds of Belgian and international jazz. In open air and in many venues and bars, the public will be able to enjoy live music, jazz in all it\'s forms: from swing to bebop, blues, rock and world music, depending on the tastes and the inspiration of the musicians who will give the best of themselves in order to make this festival unforgettable.</item>
         <item>June 20, 21 and 22! Note these dates in your diaries because during these three days, a wind of musical madness will blow on the French Community Wallonia-Brussels. For the 19th time in a row, the Music Festival will resume its rights by investing squares, gardens and dead ends to offer you more than 500 free concerts throughout Wallonia and Brussels. Many surprises in perspective: rock, pop, classical, jazz, electronic music, song, … all the ingredients will be gathered to make this party the rendezvous where everyone will find a shoe to his feet: the big ones, like the little ones . Music lover or amateur dilettante</item>
         <item>Every Friday from June to September, at 19h, this expedition on wheels embarks on a journey through one or more Brussels municipalities. This is the occasion of a beautiful ride on rollerblades or by bike, or on any non-motorized rolling object, on lanes usually reserved for cars. What discover the tunnels of the city differently! The event is also available throughout the country.</item>
         <item>In Brussels les Bains, once the entrance is crossed, visitors are instantly on holiday, away from the noise of cars and the bustle of the city, in a relaxed and summer.Somnolate in a deckchair, practice dances and the most varied sports, sunbathing on the hot sand, enjoying an aperitif, playing with the children, strolling between the chalets, watching an outdoor movie on a giant screen … For five weeks, festive spirits from all over a lot of novelties proposed this year. The Brussels beach has been the meeting place for all cultures, colors and trends.</item>
         <item>In the Ommegang, the streets of Brussels are filled with a parade of people in medieval costumes representing the various groups of the population, dignitaries and guilds of the time. Every year (on the first Thursday of July and the preceding Tuesday), the Ommegang passes through the streets of Brussels to Grand-Place. The current version is a reconstruction of the arrival into Brussels of Charles V and his court in 1549. This grand spectacle features hundreds of extras in magnificent garb.</item>
-        <item>Every day, from 14 July to 19 August 2018, along the Boulevard du Midi, between the Porte de Halle and the Porte d'Anderlecht. The traditional and gigantic Midi Fair stands along the Boulevard du Midi every year. Hundreds of attractions are there for young and old, some traditional, others the most modern.</item>
+        <item>Every day, from 14 July to 19 August 2018, along the Boulevard du Midi, between the Porte de Halle and the Porte d\'Anderlecht. The traditional and gigantic Midi Fair stands along the Boulevard du Midi every year. Hundreds of attractions are there for young and old, some traditional, others the most modern.</item>
         <item>The Brussels Summer Festival makes the inhabitants of Brussels dance during the month of August. A new scene (the "Magic Mirrors" scene is making a big comeback), an app, foodtrucks and, most importantly, an explosive programming: this year again, the BSF promises a wonderful moment of entertainment! 125,000 visitors. So, ready to dance? Here are the 5 unmissable events that will take place in the capital from August 6 to 15.</item>
         <item>Rich in products coming from the 4 corners of the globe, you will find especially African specialties, Mediterranean but also typical Belgian stands. Real place of excitement where the sales technique is to shout louder than its neighbor, do not venture there if the crowd and the noise bother you. This market also gives pride of place to plants: shrubs, potted plants, flowers, seeds … Here you will find something to reboost your home or give new life to your tired garden. We also advise you to take a tour through the Spanish specialty store which is at the beginning of the market.</item>
     </string-array>
@@ -416,11 +413,11 @@
         <item>Heysel park, located in the west of Brussels, is dedicated to recreation and leisure.
             One of the highlights of the park is the Atomium.The Atomium is a monument in Brussels, Belgium, built on the occasion of the 1958 World Fair and representing the conventional mesh of iron crystal enlarged 165 billion times.
             The Atomium was designed by the engineer André Waterkeyn and erected by the architects André and Jean Polak for the 1958 World Fair in Brussels, Belgium.
-            It is a building halfway between sculpture and architecture that rises to 102 m. Its structural steel weighs 2,400 tons. Like the Manneken Pis and the Grand Place, it has become a symbol of Belgium's capital.
+            It is a building halfway between sculpture and architecture that rises to 102 m. Its structural steel weighs 2,400 tons. Like the Manneken Pis and the Grand Place, it has become a symbol of Belgium\'s capital.
             It consists of a steel frame with nine spheres interconnected and originally coated with aluminum. The spheres have a diameter of 18 meters and weigh approximately 250 tons each. Symbolically, the Atomium embodies the audacity of an era that wanted to confront the destiny of humanity with scientific discoveries.
             The construction of the Atomium was a technical feat. Of the nine spheres, six are open to the public, each with two main floors and a lower floor reserved for service. The central tube contains the fastest elevator of the time (5 m / s) installed by the Belgian branch of the Swiss firm Schlieren (later taken over by Schindler). It allows 22 people to reach the top in 23 seconds.
             The escalators installed in the oblique tubes are among the longest in Europe. The largest is 35 m long.</item>
-        <item>The Parc du Cinquantenaire or Jubelpark is not only a park but a national landmark in Brussels. The name means 'Park of the fiftieth anniversary' and it was built during the reign of Leopold II to commemorate fifty years of Belgian independence.
+        <item>The Parc du Cinquantenaire or Jubelpark is not only a park but a national landmark in Brussels. The name means \'Park of the fiftieth anniversary\' and it was built during the reign of Leopold II to commemorate fifty years of Belgian independence.
             Symbolically, the Cinquantenaire Park in Brussels is built in the shape of a pentagon, like the inner and outer rings of the city. Cinquantenaire sits just outside the inner circle, and is close to the European Quarter.
             At the south eastern point of the park is a giant arch with two arms extending out. It is quite a monumental entrance. The two arms of the arch are home to three museums: The Autoworld, an art museum and an army museum.
             Visitors can climb to the top of the arch for free from an entrance in the army museum to see a nice view of Brussels and European Quarter. On a clear day, you will be able to see far and wide.
@@ -432,7 +429,7 @@
             Saint Michael is the Guardian of the Catholic Church and, as mentioned earlier, also the patron saint of Brussels ever since the Middle Ages.
             In Catholic writings, Saint Michael the Archangel is the defender of the Church, fighting Satan and helping lost souls in their final hours.</item>
         <item>The earliest mention of the existence of Manneken Pis can be found in an administrative text, dating from 1451–1452, about the water lines supplying the fountains of Brussels. From the beginning, the fountain played an essential role in the distribution of drinking water. It stood on a column and poured water into a double rectangular basin of stone.
-            The only representations of this first statue can be found, very schematically, in a painting by Denis Van Alsloot, representing the Brussels' Ommegang of 1615 and in a preparatory drawing to this painting.
+            The only representations of this first statue can be found, very schematically, in a painting by Denis Van Alsloot, representing the Brussels\' Ommegang of 1615 and in a preparatory drawing to this painting.
             Towards the end of the 17th century, the statue became more and more important in the city life. It was also a survivor of the bombardment of Brussels in 1695. Manneken-Pis became a precious good and enjoys a ceaselessly growing glory.
             During big events, we adorn him with luxurious clothes. We know that in the 18th century, Manneken-Pis was dressed at least 4 times a year.
             Since he lost his main function in the network of water conveyance of the City in the 19th century, Manneken-Pis gradually became an image and symbol of the Brussels folklore, the joy of the inhabitants and their capacity of self-mockery.</item>
@@ -451,9 +448,9 @@
             It already had a certain status in the 16th century. Part of the Marolles/Marollen is still influenced by the Sablon/Zavel: buyers with lots of capital are acquiring empty buildings in rue Blaesstraat or rue Haute/Hoogstraat and turning them into antiques businesses.
             Parts of Marolles/ Marollen are starting to look more and more like the Sablon/Zavel.</item>
         <item>gallery of the king and princes
-            Conceived in 1837 by Jean-Pierre Cluysenaar, the Royal Galleries Saint-Hubert are inaugurated ten years later by King Leopold I. This monumental passage brings together the Queen's Gallery, the King's Gallery and the Galerie des Princes.
+            Conceived in 1837 by Jean-Pierre Cluysenaar, the Royal Galleries Saint-Hubert are inaugurated ten years later by King Leopold I. This monumental passage brings together the Queen\'s Gallery, the King\'s Gallery and the Galerie des Princes.
             By designing for the first time in the world a passage to the dimensions of the street, Jean-Pierre Cluysenaar has created a place that has become a link between the various functions of the city: cultural spaces, habitats, shops, offices, restaurants and cafes have been around for more than 150 years.
-            Even today, the Queen's, King's and Princes' Galleries are animated by 6 million passers-by-year. The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
+            Even today, the Queen\'s, King\'s and Princes\' Galleries are animated by 6 million passers-by-year. The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
     </string-array>
     <string-array name="item_name_5">
         <item>Leisure</item>

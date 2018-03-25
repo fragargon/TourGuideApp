@@ -6,8 +6,7 @@
     <gradient
         android:type="radial"
         android:gradientRadius="192dp"
-        android:startColor="@color/opaque_black"
-        />
+        android:startColor="@color/opaque_black" />
 
     <stroke
         android:dashWidth="1dp"

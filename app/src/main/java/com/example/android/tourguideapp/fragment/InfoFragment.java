@@ -23,7 +23,6 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class InfoFragment extends Fragment {
-    private  final String webUrl = "";
 
     public InfoFragment() {
         // Required empty public constructor

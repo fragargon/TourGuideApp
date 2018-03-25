@@ -4,7 +4,7 @@
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
     android:layout_height="108dp"
-    android:background="@drawable/list_blur">
+    android:background="@drawable/background_blur">
 
     <!-- This is the item displayed on the pager activity listView-->
 

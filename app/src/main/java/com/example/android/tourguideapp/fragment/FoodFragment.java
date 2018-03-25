@@ -23,8 +23,8 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class FoodFragment extends Fragment {
-    private final int INDEX = 10;
-    private  final int CATEGORY = 2;
+    private final int CATEGORY_ID = 2;
+    private final String CATEGORY_NAME = "food";
 
     public FoodFragment() {
         // Required empty public constructor
@@ -40,6 +40,7 @@ public class FoodFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
+        int INDEX = 10;
 
         // Find the  Id's and create an array
         String [] titleName = getResources().getStringArray(R.array.item_name_2);
@@ -71,8 +72,9 @@ public class FoodFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra("category", CATEGORY);
-                i.putExtra("index", INDEX);
+                i.putExtra("categoryId", CATEGORY_ID);
+                i.putExtra("categoryName", CATEGORY_NAME);
+                i.putExtra("index", position);
                 startActivity(i);
             }
         });
