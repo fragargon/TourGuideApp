@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,16 +16,14 @@ import android.widget.ListView;
 import com.example.android.tourguideapp.DetailActivity;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
+import com.example.android.tourguideapp.model.Helper;
 import com.example.android.tourguideapp.model.Places;
-
-import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HotelFragment extends Fragment {
     private final int CATEGORY_ID = 1;
-    private final String CATEGORY_NAME = "hotel";
 
     public HotelFragment() {
         // Required empty public constructor
@@ -39,23 +38,10 @@ public class HotelFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
-        int INDEX = 10;
-
-        // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.title_name_1);
-        String [] itemName = getResources().getStringArray(R.array.item_name_1);
-
-        /* create an arrayList of Places*/
-        final ArrayList<Places> items = new ArrayList<>();
-        for(int i=0; i<INDEX; i++) {
-            // get the categories drawables
-            int drawableId = getResources().getIdentifier("hotel_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(itemName[i], titleName[i], drawableId, R.drawable.ic_action_search));
-        }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list
-        ListAdapter listAdapter = new ListAdapter(getActivity(), items);
+        ListAdapter listAdapter = new ListAdapter(getActivity(), Helper.getHotel(getContext()));
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -71,10 +57,12 @@ public class HotelFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
+                Places pos = Helper.getHotel(getContext()).get(position);
                 i.putExtra("categoryId", CATEGORY_ID);
-                i.putExtra("categoryName", CATEGORY_NAME);
+                Log.v("categoryId", "categoryId sent:" + CATEGORY_ID);
                 i.putExtra("index", position);
-                startActivity(i);
+                Log.v("hotelFragment", "current position:" + pos);
+                getActivity().startActivity(i);
             }
         });
 

@@ -15,16 +15,13 @@ import android.widget.ListView;
 import com.example.android.tourguideapp.DetailActivity;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
-import com.example.android.tourguideapp.model.Places;
-
-import java.util.ArrayList;
+import com.example.android.tourguideapp.model.Helper;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class BarFragment extends Fragment {
     private final int CATEGORY_ID = 3;
-    private final String CATEGORY_NAME = "bar";
 
     public BarFragment() {
         // Required empty public constructor
@@ -40,23 +37,10 @@ public class BarFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
-        int INDEX = 10;
-
-        // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.item_name_3);
-        String [] barName = getResources().getStringArray(R.array.title_name_3);
-
-        /* create an arrayList of Places*/
-        final ArrayList<Places> items = new ArrayList<>();
-        for(int i=0; i<INDEX; i++) {
-            // get the categories drawables
-            int drawableId = getResources().getIdentifier("bar_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[i], barName[i], drawableId, R.drawable.ic_action_search));
-        }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list
-        ListAdapter listAdapter = new ListAdapter(getActivity(), items);
+        ListAdapter listAdapter = new ListAdapter(getActivity(), Helper.getBar(getContext()));
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -73,7 +57,6 @@ public class BarFragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
                 i.putExtra("categoryId", CATEGORY_ID);
-                i.putExtra("categoryName", CATEGORY_NAME);
                 i.putExtra("index", position);
                 startActivity(i);
             }

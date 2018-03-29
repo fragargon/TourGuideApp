@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -23,9 +22,6 @@ import java.util.ArrayList;
 
 public class GridAdapter extends ArrayAdapter<Places> {
 
-    /* Initialize global variable */
-    private Context myContext;
-
     /**This is a custom constructor.
      * The context is used to inflate the layout file.
      * The list is the data we want to populate into the list
@@ -35,7 +31,6 @@ public class GridAdapter extends ArrayAdapter<Places> {
 
     public GridAdapter(Activity context, ArrayList<Places> itemList) {
         super(context, 0, itemList);
-        myContext = context;
     }
 
     /**

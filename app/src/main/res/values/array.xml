@@ -33,50 +33,6 @@
         <item>https://goo.gl/yty9yQ</item>
         <item>https://goo.gl/rFsDF7</item>
     </string-array>
-
-    <!-- arrays  (number) = category array)-->
-    <array name="cat_title_name">
-        <item>@array/title_name_1</item>
-        <item>@array/title_name_2</item>
-        <item>@array/title_name_3</item>
-        <item>@array/title_name_4</item>
-        <item>@array/title_name_5</item>
-    </array>
-    <array name="cat_item_name">
-        <item>@array/item_name_1</item>
-        <item>@array/item_name_2</item>
-        <item>@array/item_name_3</item>
-        <item>@array/item_name_4</item>
-        <item>@array/item_name_5</item>
-    </array>
-    <array name="cat_address">
-        <item>@array/address_1</item>
-        <item>@array/address_2</item>
-        <item>@array/address_3</item>
-        <item>@array/address_4</item>
-        <item>@array/address_5</item>
-    </array>
-    <array name="cat_tel">
-        <item>@array/tel_1</item>
-        <item>@array/tel_2</item>
-        <item>@array/tel_3</item>
-        <item>@array/tel_4</item>
-        <item>@array/tel_5</item>
-    </array>
-    <array name="cat_web">
-        <item>@array/web_1</item>
-        <item>@array/web_2</item>
-        <item>@array/web_3</item>
-        <item>@array/web_4</item>
-        <item>@array/web_5</item>
-    </array>
-    <array name="cat_desc">
-        <item>@array/desc_1</item>
-        <item>@array/desc_2</item>
-        <item>@array/desc_3</item>
-        <item>@array/desc_4</item>
-        <item>@array/desc_5</item>
-    </array>
     
     <!-- array cat1 => hotel =>  title_name_1 = titleName | address_1 = address | tel_1 = tel | web_1 = web | desc_1 = desc | item_name_1 = itemName -->
     <string-array name="title_name_1">

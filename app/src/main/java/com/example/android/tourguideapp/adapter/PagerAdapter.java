@@ -23,8 +23,6 @@ import com.example.android.tourguideapp.fragment.TabFragment;
  */
 
 public class PagerAdapter extends FragmentPagerAdapter {
-    /** Context of the app */
-    private Context myContext;
 
     /** Declare variable to handle the item's position */
     private final int PAGES = 6;
@@ -38,7 +36,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
      */
     public PagerAdapter(Context context, FragmentManager fm) {
         super(fm);
-        this.myContext = context;
 
         tabTitles[0] = context.getString(R.string.info);
         tabTitles[1] = context.getString(R.string.hotels);

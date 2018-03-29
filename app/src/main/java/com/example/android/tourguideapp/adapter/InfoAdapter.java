@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -21,8 +20,6 @@ import java.util.ArrayList;
  * the layout for each list based on data source {@link Places} object.
  */
 public class InfoAdapter extends ArrayAdapter<Places>{
-    /* Initialize global variable */
-    private Context myContext;
 
     /**
      * This is a custom constructor.
@@ -34,8 +31,6 @@ public class InfoAdapter extends ArrayAdapter<Places>{
 
     public InfoAdapter(Activity context, ArrayList<Places> listPager) {
         super(context, 0, listPager);
-        myContext = context;
-
     }
 
     /**

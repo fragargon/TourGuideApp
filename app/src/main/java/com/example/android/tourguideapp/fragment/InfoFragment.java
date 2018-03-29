@@ -47,7 +47,7 @@ public class InfoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
-        int INDEX = 5;
+        int index = 5;
 
         // Find the  Id's and create an array
         String [] titleName = getResources().getStringArray(R.array.info_desc);
@@ -56,7 +56,7 @@ public class InfoFragment extends Fragment {
 
         /* create an arrayList of Places*/
         final ArrayList<Places> items = new ArrayList<>();
-        for(int i=0; i<INDEX; i++) {
+        for(int i=0; i<index; i++) {
             // get the categories drawables
             int photoId = getResources().getIdentifier("info_" + (i+1), "drawable", getActivity().getPackageName());
             items.add(new Places(titleName[i], itemName[i], photoId));

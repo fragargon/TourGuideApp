@@ -29,7 +29,7 @@ public class Places implements Parcelable {
     private int iconId;
 
     /**
-     * This method is use with GridAdapter.
+     * This constructor is use with GridAdapter.
      * @param titleName is the title of the categories.
      * @param photoId   is the picture of the categories.
      * @param iconId    is the icon display in categories.
@@ -41,7 +41,7 @@ public class Places implements Parcelable {
     }
 
     /**
-     * This method is use with InfoAdapter.
+     * This constructor is use with InfoAdapter.
      * @param titleName is the title of the categories.
      * @param itemName   is the picture of the categories.
      * @param photoId    is the icon display in categories.
@@ -53,21 +53,7 @@ public class Places implements Parcelable {
     }
 
     /**
-     * This method is use with ListAdapter.
-     * @param titleName is the title name of object in categories.
-     * @param itemName  is the item name of object in categories.
-     * @param photoId   is the object's picture in categories.
-     * @param iconId    is the object's icon in categories.
-     */
-    public Places(String titleName, String itemName, int photoId, int iconId) {
-        this.titleName = titleName;
-        this.itemName = itemName;
-        this.photoId = photoId;
-        this.iconId = iconId;
-    }
-
-    /**
-     * This method is use with DetailActivity.
+     * This is the main constructor.
      * @param titleName is the title name of object in categories.
      * @param itemName  is the item name of object in categories.
      * @param address   is the address name of object in categories.

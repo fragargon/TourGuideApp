@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp.adapter;
 
 import android.app.Activity;
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -24,9 +23,6 @@ import java.util.ArrayList;
 
 public class ListAdapter extends ArrayAdapter<Places>{
 
-    /* Initialize global variable */
-    private Context myContext;
-
     /**
      * This is a custom constructor.
      * The context is used to inflate the layout file.
@@ -37,7 +33,6 @@ public class ListAdapter extends ArrayAdapter<Places>{
 
     public ListAdapter(Activity context, ArrayList<Places> listPager) {
         super(context, 0, listPager);
-        myContext = context;
     }
 
     /**
@@ -62,25 +57,25 @@ public class ListAdapter extends ArrayAdapter<Places>{
         Places currentList = getItem(position);
 
         /* Find the TextView, get and set the text from the current titleName object */
-        TextView titleName = listViewPager.findViewById(R.id.thumbnail_title);
+        TextView titleName = listViewPager.findViewById(R.id.list_title_name);
         if (currentList != null) {
             titleName.setText(currentList.getTitleName());
         }
 
         /* Find the TextView, get and set the text from the current itemName object */
-        TextView itemName = listViewPager.findViewById(R.id.thumbnail_name);
+        TextView itemName = listViewPager.findViewById(R.id.list_item_name);
         if (currentList != null) {
             itemName.setText(currentList.getItemName());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawablePicId = listViewPager.findViewById(R.id.thumbnail_image);
+        ImageView drawablePicId = listViewPager.findViewById(R.id.list_image_view);
         if (currentList != null) {
             drawablePicId.setImageResource(currentList.getPhotoId());
         }
 
         /* Find the ImageView, get and set the image from the current drawable object */
-        ImageView drawableIconId = listViewPager.findViewById(R.id.thumbnail_icon);
+        ImageView drawableIconId = listViewPager.findViewById(R.id.list_icon_view);
         if (currentList != null) {
             drawableIconId.setImageResource(currentList.getIconId());
         }
