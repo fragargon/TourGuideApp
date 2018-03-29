@@ -1,2 +1,2 @@
 # TourGuideApp
-initial commit - ***  THIS PROJECT IS ABANDONED  ***
+initial commit -
