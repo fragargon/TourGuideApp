@@ -13,6 +13,18 @@ import java.util.ArrayList;
 
 public class Helper {
 
+    public static ArrayList<Places> getInfo (Context context) {
+
+        String [] titleName = context.getResources().getStringArray(R.array.info_desc);
+        String [] itemName = context.getResources().getStringArray(R.array.info_desc_1);
+        int [] photoId = new int[]{R.drawable.info_1, R.drawable.info_2, R.drawable.info_3, R.drawable.info_4, R.drawable.info_5};
+
+        ArrayList<Places> infoList = new ArrayList<>();
+        for (int i = 0; i<5; i++){
+            infoList.add(new Places(titleName[i], itemName[i], photoId[i]));
+        }return infoList;
+    }
+
     /**
      *
      * @param context The current context. used to initialize the string arrays.
@@ -31,7 +43,7 @@ public class Helper {
 
         ArrayList<Places> hotelList = new ArrayList<>();
         for(int i = 0; i<10; i++){
-            hotelList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i]));
+            hotelList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i], R.drawable.ic_action_search));
         }return hotelList;
     }
 
@@ -53,7 +65,7 @@ public class Helper {
 
         ArrayList<Places> foodList = new ArrayList<>();
         for(int i = 0; i<10; i++){
-            foodList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i]));
+            foodList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i], R.drawable.ic_action_search));
         }return foodList;
     }
 
@@ -75,7 +87,7 @@ public class Helper {
 
         ArrayList<Places> barList = new ArrayList<>();
         for(int i = 0; i<10; i++){
-            barList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i]));
+            barList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i], R.drawable.ic_action_search));
         }return barList;
     }
 
@@ -97,7 +109,7 @@ public class Helper {
 
         ArrayList<Places> eventsList = new ArrayList<>();
         for(int i = 0; i<8; i++){
-            eventsList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i]));
+            eventsList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i], R.drawable.ic_action_search));
         }return eventsList;
     }
 
@@ -119,7 +131,7 @@ public class Helper {
 
         ArrayList<Places> placesList = new ArrayList<>();
         for(int i = 0; i<8; i++){
-            placesList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i]));
+            placesList.add(new Places(titleName[i], itemName[i], address[i], tel[i], web[i], desc[i], photoId[i], R.drawable.ic_action_search));
         }return placesList;
     }
 

@@ -53,7 +53,7 @@ public class Places implements Parcelable {
     }
 
     /**
-     * This is the main constructor.
+     * This is the details constructor.
      * @param titleName is the title name of object in categories.
      * @param itemName  is the item name of object in categories.
      * @param address   is the address name of object in categories.
@@ -70,6 +70,27 @@ public class Places implements Parcelable {
         this.web = web;
         this.desc = desc;
         this.photoId = photoId;
+    }
+
+    /**
+     * This is the main constructor.
+     * @param titleName is the title name of object in categories.
+     * @param itemName  is the item name of object in categories.
+     * @param address   is the address name of object in categories.
+     * @param tel       is the tel name of object in categories.
+     * @param web       is the url name of object in categories.
+     * @param desc      is the description name of object in categories.
+     * @param photoId is the object's picture in categories.
+     */
+    public Places(String titleName, String itemName, String address, String tel, String web, String desc, int photoId, int iconId) {
+        this.titleName = titleName;
+        this.itemName = itemName;
+        this.address = address;
+        this.tel = tel;
+        this.web = web;
+        this.desc = desc;
+        this.photoId = photoId;
+        this.iconId = iconId;
     }
 
     /** Getter return the string resource ID for title */
@@ -112,7 +133,10 @@ public class Places implements Parcelable {
         return iconId;
     }
 
-    // Interface need by the Parcelable Class
+    /**
+     * Interface need by the Parcelable Class.
+     * It will be required during un-marshaling data stored in a Parcel.
+     */
     public static final Parcelable.Creator  CREATOR = new Parcelable.Creator() {
         public Places createFromParcel(Parcel in) {
             return new Places(in);
@@ -124,7 +148,8 @@ public class Places implements Parcelable {
     };
 
     /**
-     * @param in read the given object in Parcel.
+     * This will be used only by the MyCreator
+     * @param in
      */
         public Places(Parcel in){
             this.titleName = in.readString();

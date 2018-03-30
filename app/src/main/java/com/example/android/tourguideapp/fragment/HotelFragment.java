@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,13 +16,13 @@ import com.example.android.tourguideapp.DetailActivity;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
 import com.example.android.tourguideapp.model.Helper;
-import com.example.android.tourguideapp.model.Places;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HotelFragment extends Fragment {
-    private final int CATEGORY_ID = 1;
 
     public HotelFragment() {
         // Required empty public constructor
@@ -56,13 +55,10 @@ public class HotelFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(getActivity(), DetailActivity.class);
-                Places pos = Helper.getHotel(getContext()).get(position);
-                i.putExtra("categoryId", CATEGORY_ID);
-                Log.v("categoryId", "categoryId sent:" + CATEGORY_ID);
-                i.putExtra("index", position);
-                Log.v("hotelFragment", "current position:" + pos);
-                getActivity().startActivity(i);
+                final ArrayList selectedHotel = Helper.getHotel(getContext());
+                Intent chosenHotel = new Intent(getActivity(), DetailActivity.class);
+                chosenHotel.putParcelableArrayListExtra("CHOSEN_PLACES", selectedHotel);
+                startActivity(chosenHotel);
             }
         });
 

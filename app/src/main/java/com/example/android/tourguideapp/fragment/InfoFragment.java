@@ -15,9 +15,7 @@ import android.widget.ListView;
 
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.InfoAdapter;
-import com.example.android.tourguideapp.model.Places;
-
-import java.util.ArrayList;
+import com.example.android.tourguideapp.model.Helper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -47,24 +45,13 @@ public class InfoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.activity_pager, container, false);
-        int index = 5;
 
         // Find the  Id's and create an array
-        String [] titleName = getResources().getStringArray(R.array.info_desc);
-        String [] itemName = getResources().getStringArray(R.array.info_desc_1);
         final String [] webUrl = getResources().getStringArray(R.array.info_web_1);
-
-        /* create an arrayList of Places*/
-        final ArrayList<Places> items = new ArrayList<>();
-        for(int i=0; i<index; i++) {
-            // get the categories drawables
-            int photoId = getResources().getIdentifier("info_" + (i+1), "drawable", getActivity().getPackageName());
-            items.add(new Places(titleName[i], itemName[i], photoId));
-        }
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list
-        InfoAdapter infoAdapter = new InfoAdapter(getActivity(), items);
+        InfoAdapter infoAdapter = new InfoAdapter(getActivity(), Helper.getInfo(getContext()));
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
