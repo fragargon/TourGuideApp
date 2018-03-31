@@ -9,33 +9,40 @@
     android:background="@drawable/background_blur"
     android:orientation="vertical">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <de.hdodenhof.circleimageview.CircleImageView
+            <ImageView
                 android:id="@+id/info_image"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="@dimen/margin_8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height_header"
+                android:layout_marginTop="@dimen/margin_4"
                 android:layout_marginRight="@dimen/margin_4"
                 android:layout_marginEnd="@dimen/margin_4"
                 android:layout_marginStart="@dimen/margin_4"
-                android:layout_marginLeft="@dimen/margin_8"
-                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_4"
                 android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
                 tools:src="@drawable/info_1"/>
 
             <TextView
                 android:id="@+id/info_text"
                 style="@style/text_view_info"
+                android:textSize="@dimen/text_view_size_48"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/marker"
                 tools:text="@tools:sample/lorem"/>
-        </LinearLayout>
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/info_text_2"
             style="@style/text_view_info"
+            android:textSize="@dimen/text_view_size_16"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/comiccity"
             tools:text="@tools:sample/lorem/random"/>
 
 </LinearLayout>
