@@ -3,6 +3,7 @@ package com.example.android.tourguideapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -10,6 +11,7 @@ import com.example.android.tourguideapp.model.Places;
 
 public class DetailActivity extends AppCompatActivity {
 
+    /* declare UI */
     ImageView imageView;
     TextView titleNameView, itemNameView, webView, telView, addressView, descView;
 
@@ -18,18 +20,22 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
+        final String CATEGORY_ID = "categoryId";
+
         /* get intent */
         Intent intent = getIntent();
-        Places places = intent.getParcelableExtra("CHOSEN_PLACES");
+        Places chosenItem = intent.getParcelableExtra(CATEGORY_ID);
+
+        Log.v("my_tag", "places object receveid is:" + chosenItem.toString());
 
         /* set variables */
-        String titleName = places.getTitleName();
-        String itemName = places.getItemName();
-        String address = places.getAddress();
-        String tel = places.getTel();
-        String web = places.getWeb();
-        String desc = places.getDesc();
-        int image = places.getPhotoId();
+        String titleName = chosenItem.getTitleName();
+        String itemName = chosenItem.getItemName();
+        String address = chosenItem.getAddress();
+        String tel = chosenItem.getTel();
+        String web = chosenItem.getWeb();
+        String desc = chosenItem.getDesc();
+        int image = chosenItem.getPhotoId();
 
         /* Initialize de views */
         titleNameView = findViewById(R.id.detail_title_name);

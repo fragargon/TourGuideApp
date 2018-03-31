@@ -17,12 +17,11 @@ import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
 import com.example.android.tourguideapp.model.Helper;
 
-import java.util.ArrayList;
-
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HotelFragment extends Fragment {
+    private final String CATEGORY_ID = "categoryId";
 
     public HotelFragment() {
         // Required empty public constructor
@@ -55,10 +54,9 @@ public class HotelFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final ArrayList selectedHotel = Helper.getHotel(getContext());
-                Intent chosenHotel = new Intent(getActivity(), DetailActivity.class);
-                chosenHotel.putParcelableArrayListExtra("CHOSEN_PLACES", selectedHotel);
-                startActivity(chosenHotel);
+                Intent i = new Intent(getActivity(), DetailActivity.class);
+                i.putExtra(CATEGORY_ID, Helper.getHotel(getContext()).get(position));
+                startActivity(i);
             }
         });
 

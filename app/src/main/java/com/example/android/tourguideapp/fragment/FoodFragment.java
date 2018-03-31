@@ -21,7 +21,7 @@ import com.example.android.tourguideapp.model.Helper;
  * A simple {@link Fragment} subclass.
  */
 public class FoodFragment extends Fragment {
-    private final int CATEGORY_ID = 2;
+    private final String CATEGORY_ID = "categoryId";
 
     public FoodFragment() {
         // Required empty public constructor
@@ -56,8 +56,7 @@ public class FoodFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra("categoryId", CATEGORY_ID);
-                i.putExtra("index", position);
+                i.putExtra(CATEGORY_ID, Helper.getFood(getContext()).get(position));
                 startActivity(i);
             }
         });
