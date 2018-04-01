@@ -43,6 +43,7 @@
             android:textColor="@color/colorAccent"
             android:fontFamily="@font/jon_sans"
             tools:text="@tools:sample/lorem/random"
-            android:background="@drawable/background_blur"/>
+            android:background="@drawable/background_list"
+            android:layout_marginBottom="@dimen/margin_16"/>
 
 </LinearLayout>

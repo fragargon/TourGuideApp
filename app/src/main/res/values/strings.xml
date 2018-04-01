@@ -13,4 +13,6 @@
     <string name="footer_header">Belgium</string>
     <!-- String detail activity -->
     <string name="button_web">Web Site</string>
+    <string name="get_location">OPEN MAPS</string>
+    <string name="call_them">CALL THEM</string>
 </resources>

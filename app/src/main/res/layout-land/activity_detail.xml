@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.tourguideapp.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/hotel_9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_list"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/detail_address"
+                        style="@style/text_view_detail_landscape"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_action_home"
+                        android:fontFamily="@font/marker"
+                        android:text="@string/get_location"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/detail_tel"
+                        style="@style/text_view_detail_landscape"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_action_phone_start"
+                        android:fontFamily="@font/marker"
+                        android:text="@string/call_them"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail_title_name"
+                    style="@style/text_view_detail_landscape"
+                    android:layout_width="match_parent"
+                    android:textSize="20sp"
+                    tools:text="Hotel de la Bonne Esperance" />
+
+                <TextView
+                    android:id="@+id/detail_item_name"
+                    style="@style/text_view_detail_landscape"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_4"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    tools:text="@tools:sample/cities" />
+
+                <Button
+                    android:id="@+id/detail_web"
+                    style="@style/text_view_detail_landscape"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/background_list"
+                    android:fontFamily="@font/marker"
+                    android:text="@string/button_web" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_desc"
+            style="@style/text_view_detail_landscape"
+            android:layout_gravity="center_horizontal"
+            tools:text="@tools:sample/lorem/random" />
+    </LinearLayout>
+
+</ScrollView>

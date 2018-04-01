@@ -425,14 +425,14 @@
         <item>Midi Market</item>
     </string-array>
     <string-array name="address_4">
-        <item>May 25/26/27</item>
-        <item>June 21/22/23/24/25</item>
-        <item>From 3rd June to \n09th September</item>
-        <item>From 06 June to \n12 August</item>
-        <item>the first Thursday \nof July</item>
-        <item>from 14 July to \n19 August</item>
-        <item>From 14 to 18 August</item>
-        <item>Every Sunday 6h to 13h30</item>
+        <item>1000 brussels</item>
+        <item>1000 brussels</item>
+        <item>1000 brussels</item>
+        <item>Bruxelles-Les-Bains, Quai des Péniches, Bruxelles</item>
+        <item>grand-place bruxelles</item>
+        <item>Porte de Hal, Saint-Gilles</item>
+        <item>1000 brussels</item>
+        <item>Bruxelles-Midi, Avenue Fonsny, Bruxelles</item>
     </string-array>
     <string-array name="tel_4">
         <item>NA</item>
@@ -495,14 +495,14 @@
             <br/>We also advise you to take a tour through the Spanish specialty store which is at the beginning of the market.</item>
     </string-array>
     <string-array name="item_name_4">
-        <item>free access</item>
-        <item>free access</item>
-        <item>free access</item>
-        <item>Leisure</item>
-        <item>Historical</item>
-        <item>Leisure</item>
-        <item>Music Festival</item>
-        <item>shopping</item>
+        <item>May 25/26/27</item>
+        <item>June 21/22/23/24/25</item>
+        <item>From 3rd June to \n09th September</item>
+        <item>From 06 June to \n12 August</item>
+        <item>the first Thursday \nof July</item>
+        <item>from 14 July to \n19 August</item>
+        <item>From 14 to 18 August</item>
+        <item>Every Sunday 6h to 13h30</item>
     </string-array>
 
     <!-- array cat5 => places => title_name_5 = titleName | address_5 = address | tel_5 = tel | web_5 = web | desc_5 = desc | item_name_5 = itemName -->
@@ -517,14 +517,14 @@
         <item>Galeries Royales St-Hubert</item>
     </string-array>
     <string-array name="address_5">
-        <item>Grand Place is the central square of the City of Brussels</item>
-        <item>Heysel park, located in the west of Brussels</item>
-        <item>The Parc du Cinquantenaire or Jubelpark is not only a park</item>
-        <item>Its history goes as back as the 9th or even the 8th century</item>
-        <item>Manneken-Pis was at first a fountain that played an essential role</item>
-        <item>Discover this essential cultural centre in the heart of Brussels.</item>
-        <item>The Sablon and the Marolles appear to be two extremes</item>
-        <item>Right next to the Grand-Place, the Galerie de la Reine is home to lots of luxury boutiques</item>
+        <item>Grand Place 1000, Bruxelles</item>
+        <item>Atomium, Square de l'Atomium, Bruxelles</item>
+        <item>Cinquantenaire, Bruxelles</item>
+        <item>Cathédrale Saints-Michel-et-Gudule, Place Sainte-Gudule, Bruxelles</item>
+        <item>Manneken Pis, Bruxelles</item>
+        <item>Royal Museums of Fine Arts of Belgium, Rue de la Régence, Bruxelles</item>
+        <item>Sablon Antiques Center, Place du Grand Sablon, Bruxelles</item>
+        <item>Galeries St. Hubert, Rue du Marché aux Herbes, Bruxelles</item>
     </string-array>
     <string-array name="tel_5">
         <item>NA</item>
@@ -637,14 +637,14 @@
             <br/>The passage is at the same time a microcosm, a place of memory and creation, where past, present and future intertwine inextricably.</item>
     </string-array>
     <string-array name="item_name_5">
-        <item>Leisure</item>
-        <item>Leisure</item>
-        <item>Leisure</item>
-        <item>Culture</item>
-        <item>Culture</item>
-        <item>Culture</item>
-        <item>shopping</item>
-        <item>shopping</item>
+        <item>Brussels's heart</item>
+        <item>Universal expo 1958</item>
+        <item>Park in Brussels</item>
+        <item>Romanesque church</item>
+        <item>an image and symbol</item>
+        <item>Fine Arts of Belgium</item>
+        <item>place for antiques</item>
+        <item>shopping passage place</item>
     </string-array>
 
 </resources>

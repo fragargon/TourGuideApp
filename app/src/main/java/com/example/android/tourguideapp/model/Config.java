@@ -6,18 +6,15 @@ package com.example.android.tourguideapp.model;
 
 public final class Config {
 
-    /* Constant in helper */
-    public static final String PHONE_NA = "NA";
-
-    /* Constant Intent in MainActivity */
+    /* send Intent tab selection in MainActivity */
     public static final String TAB_SELECT ="category";
 
     /* Constant Bundle in TabFragment */
     public static final String ARG_PAGE = "ARG_PAGE";
 
-    /* Constant Intent in Fragment */
+    /* send  Intent item selection from list view */
     public static final String CATEGORY_ID = "categoryId";
 
-    /* Constant used in PagerAdapter class */
+    /* set tab count used in PagerAdapter class */
     public static final int PAGES_COUNT = 6;
 }

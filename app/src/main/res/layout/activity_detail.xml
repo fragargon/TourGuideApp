@@ -46,7 +46,8 @@
                 android:layout_weight="1"
                 android:drawableTop="@drawable/ic_action_home"
                 android:textSize="14sp"
-                tools:text="rue de la galere 26 \n1000 brussel" />
+                android:text="@string/get_location"
+                android:fontFamily="@font/marker"/>
 
             <TextView
                 android:id="@+id/detail_tel"
@@ -54,7 +55,8 @@
                 android:layout_weight="1"
                 android:drawableTop="@drawable/ic_action_phone_start"
                 android:textSize="14sp"
-                tools:text="00325582600" />
+                android:text="@string/call_them"
+                android:fontFamily="@font/marker"/>
 
         </LinearLayout>
 
@@ -64,7 +66,6 @@
             android:layout_gravity="center_horizontal"
             tools:text="@tools:sample/lorem/random"/>
 
-
         <TextView
             android:id="@+id/detail_item_name"
             style="@style/text_view_detail"
@@ -72,14 +73,14 @@
             android:textSize="14sp"
             tools:text="@tools:sample/cities" />
 
-
         <Button
             android:id="@+id/detail_web"
             style="@style/text_view_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background_list"
-            tools:text="@string/button_web"/>
+            android:text="@string/button_web"
+            android:fontFamily="@font/marker"/>
 
     </LinearLayout>
 

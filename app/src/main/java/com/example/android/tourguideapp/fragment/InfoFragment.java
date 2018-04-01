@@ -31,7 +31,7 @@ public class InfoFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    // this method retrieve the url from an onclick position
+    // this method send the url from an onclick position
     public void openWebPage(String webUrl) {
         Uri webPage = Uri.parse(webUrl);
         Intent intent = new Intent(Intent.ACTION_VIEW, webPage);
