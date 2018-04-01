@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.example.android.tourguideapp.model.Places;
 
+import static com.example.android.tourguideapp.model.Config.CATEGORY_ID;
+
 public class DetailActivity extends AppCompatActivity {
 
     /* declare UI */
@@ -19,8 +21,6 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
-        final String CATEGORY_ID = "categoryId";
 
         /* get intent */
         Intent intent = getIntent();

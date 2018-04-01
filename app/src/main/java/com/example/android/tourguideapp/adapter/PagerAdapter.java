@@ -6,15 +6,17 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.android.tourguideapp.PagerActivity;
+import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.fragment.BarFragment;
 import com.example.android.tourguideapp.fragment.EventsFragment;
 import com.example.android.tourguideapp.fragment.FoodFragment;
 import com.example.android.tourguideapp.fragment.HotelFragment;
 import com.example.android.tourguideapp.fragment.InfoFragment;
-import com.example.android.tourguideapp.model.Places;
 import com.example.android.tourguideapp.fragment.PlacesFragment;
-import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.fragment.TabFragment;
+import com.example.android.tourguideapp.model.Places;
+
+import static com.example.android.tourguideapp.model.Config.PAGES_COUNT;
 
 /**
  * {@link PagerAdapter} is a {@link FragmentPagerAdapter}
@@ -25,8 +27,7 @@ import com.example.android.tourguideapp.fragment.TabFragment;
 public class PagerAdapter extends FragmentPagerAdapter {
 
     /** Declare variable to handle the item's position */
-    private final int PAGES = 6;
-    private String tabTitles[] = new String[PAGES];
+    private String tabTitles[] = new String[PAGES_COUNT];
 
     /**
      * Create a new {@link PagerAdapter} object
@@ -50,7 +51,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return PAGES;
+        return PAGES_COUNT;
     }
 
     /**

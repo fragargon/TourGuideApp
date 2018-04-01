@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.android.tourguideapp.adapter.PagerAdapter;
 import com.example.android.tourguideapp.fragment.TabFragment;
 
+import static com.example.android.tourguideapp.model.Config.TAB_SELECT;
+
 /**
  * Create an {@link PagerAdapter} activity which shows
  * a view pager with an {@link TabFragment} tab layout.
@@ -16,7 +18,7 @@ import com.example.android.tourguideapp.fragment.TabFragment;
 
 public class PagerActivity extends AppCompatActivity {
 
-    private static int NUM_CAT = 0;
+    private static int tabSelect = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class PagerActivity extends AppCompatActivity {
         /* Get Intent Extra */
         if (getIntent().getExtras() != null) {
             Bundle bundle = getIntent().getExtras();
-            NUM_CAT = bundle.getInt("category");
+            tabSelect = bundle.getInt(TAB_SELECT);
         }
 
         /* Find the view pager that will allow the user to swipe between fragments. */
@@ -38,7 +40,7 @@ public class PagerActivity extends AppCompatActivity {
 
         /* Set the adapter onto the view pager. */
         vp.setAdapter(adapter);
-        vp.setCurrentItem(NUM_CAT);
+        vp.setCurrentItem(tabSelect);
 
         /* Find the tab layout that shows the tabs. */
         TabLayout tabLayout = findViewById(R.id.sliding_tabs);

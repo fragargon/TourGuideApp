@@ -13,6 +13,28 @@ import java.util.ArrayList;
 
 public class Helper {
 
+    /**
+     *
+     * @param context The current context. used to initialize the string arrays.
+     * @return return the array list of category grid view.
+     */
+    public static ArrayList<Places> getCategory (Context context) {
+
+        String [] category = context.getResources().getStringArray(R.array.categories);
+        int [] photoId = new int[]{R.drawable.cat1, R.drawable.cat2, R.drawable.cat3, R.drawable.cat4,
+                R.drawable.cat5, R.drawable.cat6};
+
+        ArrayList<Places> categoryList = new ArrayList<>();
+        for (int i = 0; i<6; i++){
+            categoryList.add(new Places(category[i], photoId[i], R.drawable.ic_navigate_next));
+        }return categoryList;
+    }
+
+    /**
+     *
+     * @param context The current context. used to initialize the string arrays.
+     * @return return the array list of info list view.
+     */
     public static ArrayList<Places> getInfo (Context context) {
 
         String [] titleName = context.getResources().getStringArray(R.array.info_desc);

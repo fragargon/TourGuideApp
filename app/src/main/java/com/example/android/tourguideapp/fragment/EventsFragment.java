@@ -15,13 +15,13 @@ import android.widget.ListView;
 import com.example.android.tourguideapp.DetailActivity;
 import com.example.android.tourguideapp.R;
 import com.example.android.tourguideapp.adapter.ListAdapter;
+import com.example.android.tourguideapp.model.Config;
 import com.example.android.tourguideapp.model.Helper;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class EventsFragment extends Fragment {
-    private final String CATEGORY_ID = "categoryId";
 
     public EventsFragment() {
         // Required empty public constructor
@@ -56,7 +56,7 @@ public class EventsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent i = new Intent(getActivity(), DetailActivity.class);
-                i.putExtra(CATEGORY_ID, Helper.getEvents(getContext()).get(position));
+                i.putExtra(Config.CATEGORY_ID, Helper.getEvents(getContext()).get(position));
                 startActivity(i);
             }
         });
