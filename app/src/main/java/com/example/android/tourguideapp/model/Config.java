@@ -6,6 +6,9 @@ package com.example.android.tourguideapp.model;
 
 public final class Config {
 
+    /* Constant in helper */
+    public static final String PHONE_NA = "NA";
+
     /* Constant Intent in MainActivity */
     public static final String TAB_SELECT ="category";
 

@@ -3,6 +3,8 @@ package com.example.android.tourguideapp.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Objects;
+
 /**
  * Creating a custom class {@link Places} represents a data model.
  * It display information given by TourGuideApp through 6 categories.
@@ -18,7 +20,7 @@ public class Places implements Parcelable {
     // String resource id for address
     private String address;
     // String resource id for tel
-    private String tel;
+    private String tel = PHONE_NA;
     // String resource id for web
     private String web;
     // String resource id for desc
@@ -27,6 +29,8 @@ public class Places implements Parcelable {
     private int photoId;
     // Resource id for icon
     private int iconId;
+    // Constant value that represent that tel is NA
+    private static final String PHONE_NA = "NA";
 
     /**
      * This constructor is use with GridAdapter.
@@ -49,26 +53,6 @@ public class Places implements Parcelable {
     public Places(String titleName, String itemName, int photoId) {
         this.titleName = titleName;
         this.itemName = itemName;
-        this.photoId = photoId;
-    }
-
-    /**
-     * This is the details constructor.
-     * @param titleName is the title name of object in categories.
-     * @param itemName  is the item name of object in categories.
-     * @param address   is the address name of object in categories.
-     * @param tel       is the tel name of object in categories.
-     * @param web       is the url name of object in categories.
-     * @param desc      is the description name of object in categories.
-     * @param photoId is the object's picture in categories.
-     */
-    public Places(String titleName, String itemName, String address, String tel, String web, String desc, int photoId) {
-        this.titleName = titleName;
-        this.itemName = itemName;
-        this.address = address;
-        this.tel = tel;
-        this.web = web;
-        this.desc = desc;
         this.photoId = photoId;
     }
 
@@ -133,6 +117,11 @@ public class Places implements Parcelable {
         return iconId;
     }
 
+    /** Boolean is true if string tel is (NA) */
+    public boolean hasTel() {
+        return !Objects.equals(tel, PHONE_NA);
+    }
+
     /**
      * Interface need by the Parcelable Class.
      * It will be required during un-marshaling data stored in a Parcel.
@@ -149,7 +138,7 @@ public class Places implements Parcelable {
 
     /**
      * This will be used only by the MyCreator
-     * @param in
+     * @param in write in parcel
      */
         public Places(Parcel in){
             this.titleName = in.readString();

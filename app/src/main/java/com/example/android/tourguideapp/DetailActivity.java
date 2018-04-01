@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -26,7 +27,8 @@ public class DetailActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Places chosenItem = intent.getParcelableExtra(CATEGORY_ID);
 
-        Log.v("my_tag", "places object receveid is:" + chosenItem.toString());
+        /* get the logs from intent chosenItem */
+        Log.v("my_tag", "places object received is:" + chosenItem.toString());
 
         /* set variables */
         String titleName = chosenItem.getTitleName();
@@ -45,7 +47,13 @@ public class DetailActivity extends AppCompatActivity {
         addressView = findViewById(R.id.detail_address);
         addressView.setText(address);
         telView = findViewById(R.id.detail_tel);
-        telView.setText(tel);
+        if (chosenItem.hasTel()){
+            telView.setText(tel);
+            telView.setVisibility(View.VISIBLE);
+        }else {
+            telView.setVisibility(View.GONE);
+        }
+
         webView = findViewById(R.id.detail_web);
         webView.setText(web);
         descView = findViewById(R.id.detail_desc);
