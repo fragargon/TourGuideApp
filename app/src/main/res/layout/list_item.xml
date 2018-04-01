@@ -4,7 +4,7 @@
     android:id="@+id/list_item_pager"
     android:layout_width="match_parent"
     android:layout_height="108dp"
-    android:background="@drawable/background_blur">
+    android:background="@drawable/background_list">
 
     <!-- This is the item displayed on the pager activity listView-->
 
@@ -30,7 +30,7 @@
         <TextView
             android:id="@+id/list_title_name"
             style="@style/text_list_view"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:gravity="bottom"
             android:textColor="@color/colorAccent"
             tools:text="@tools:sample/full_names" />
@@ -38,7 +38,7 @@
         <TextView
             android:id="@+id/list_item_name"
             style="@style/text_list_view"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textColor="@color/opaque_white"
             tools:text="@tools:sample/last_names"/>
     </LinearLayout>

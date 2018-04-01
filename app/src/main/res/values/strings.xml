@@ -11,12 +11,6 @@
     <!-- string main activity -->
     <string name="header_text">Brussels City Tour</string>
     <string name="footer_header">Belgium</string>
-    <!-- string fragment info -->
-    <string name="brussels_accommodation"></string>
-    <string name="brussels_accommodation_1">You can find a bed in a Brussels hostel for around €17 - €25 per night. There are hostels located 15 minutes walk from the main square, but many are further away. Therefore make sure to look at the map too. Hostel atmosphere is quite friendly and it is a very good place to meet fellow travellers. Many people who travel on their own like to sit in the common room during the evening and chat. Or even plan their sightseeing together.</string>
-    <string name="brussels_accommodation_web">https://goo.gl/qZZUsU</string>
-    <string name="brussels_attraction">Tourist bus is a comfortable way of sightseeing without getting tired from managing the whole tour. It costs €32 for 48 hours and covers most Brussels attractions. Many people choose to do the whole circle around city first. To look around, listen to audioguide (in most world languages) and after that hop off to see the attractions.The Brussels hop-on hop-off bus goes around the city and stops at famous attractions. You can get off-board, check out the attraction and continue the route by getting on another bus whenever you feel like it.</string>
-    <string name="brussels_attraction_web">https://goo.gl/yty9yQ</string>
-    <string name="brussels_guide">For travelers who prefer to see the sights rather than bury their nose in a travel guide, there are guided sightseeing and topic tours available all over Brussels. Most of them have multi-lingual guides available who speak English, French, German, Dutch, Russian and Arabic. Private tours for only your friends or relatives are also available.Brussels beer tasting tour. Within an atmosphere of authentic out-of-sight Brussels taverns, you will taste beers and pair them with foods. A 4 hour tour of beer and food guided by a beer expert with 20 years of experience.Brussels chocolate tour. By the end of this tour you will understand how to choose quality chocolate and why Belgium is so famous for it. And as you are walking between chocolate shops, sightseeing and monument history commentary will brighten your way. There is also a short chocolate workshop at the end of the tour.</string>
-    <string name="brussels_guide_web">https://visit.brussels/en/toursforgroups</string>
+    <!-- String detail activity -->
+    <string name="button_web">Web Site</string>
 </resources>

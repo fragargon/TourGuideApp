@@ -1,89 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/margin_4"
-    android:padding="@dimen/margin_4"
-    android:background="@drawable/background_blur"
-    android:orientation="vertical"
+    android:fillViewport="true"
     tools:context="com.example.android.tourguideapp.DetailActivity">
 
-    <RelativeLayout
-        android:id="@+id/detail_relative_layout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/detail_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_margin="@dimen/margin_4"
-            tools:src="@drawable/hotel_9" />
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/hotel_9"
+                android:contentDescription="@string/app_name"/>
+
+        <RelativeLayout
+            android:id="@+id/detail_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detail_title_name"
+                style="@style/text_view_detail"
+                android:textSize="20sp"
+                tools:text="Hotel de la Bonne Esperance" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/background_list">
+
+            <TextView
+                android:id="@+id/detail_address"
+                style="@style/text_view_detail"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_action_home"
+                android:textSize="14sp"
+                tools:text="rue de la galere 26 \n1000 brussel" />
+
+            <TextView
+                android:id="@+id/detail_tel"
+                style="@style/text_view_detail"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_action_phone_start"
+                android:textSize="14sp"
+                tools:text="00325582600" />
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/detail_address"
-            style="@style/text_view_info"
-            android:layout_marginTop="@dimen/margin_8"
-            android:layout_toEndOf="@id/detail_image"
-            android:layout_toRightOf="@id/detail_image"
-            android:textSize="14sp"
-            tools:text="rue de la galere 26 \n1000 brussel"
-            android:drawableTop="@drawable/ic_action_home" />
+            android:id="@+id/detail_desc"
+            style="@style/text_view_detail"
+            android:layout_gravity="center_horizontal"
+            tools:text="@tools:sample/lorem/random"/>
+
 
         <TextView
             android:id="@+id/detail_item_name"
-            style="@style/text_view_info"
+            style="@style/text_view_detail"
             android:layout_marginTop="@dimen/margin_4"
-            android:layout_marginLeft="@dimen/margin_32"
-            android:layout_marginStart="@dimen/margin_32"
-            android:layout_toEndOf="@id/detail_image"
-            android:layout_toRightOf="@id/detail_image"
-            android:layout_below="@id/detail_address"
             android:textSize="14sp"
-            tools:text="30€/night" />
+            tools:text="@tools:sample/cities" />
 
-        <TextView
+
+        <Button
             android:id="@+id/detail_web"
-            style="@style/text_view_info"
-            android:layout_marginLeft="@dimen/margin_16"
-            android:layout_marginStart="@dimen/margin_16"
-            android:layout_toEndOf="@id/detail_image"
-            android:layout_toRightOf="@id/detail_image"
-            android:layout_below="@+id/detail_item_name"
-            tools:text="Site Web"
-            android:drawableLeft="@drawable/ic_action_globe"
-            android:drawableStart="@drawable/ic_action_globe"/>
+            style="@style/text_view_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_list"
+            tools:text="@string/button_web"/>
 
-        <TextView
-            android:id="@+id/detail_tel"
-            style="@style/text_view_info"
-            android:layout_marginTop="@dimen/margin_8"
-            android:layout_toEndOf="@id/detail_image"
-            android:layout_toRightOf="@id/detail_image"
-            android:gravity="center_vertical"
-            android:layout_alignBottom="@id/detail_image"
-            android:textSize="14sp"
-            tools:text="00325582600"
-            android:drawableLeft="@drawable/ic_action_phone_start"
-            android:drawableStart="@drawable/ic_action_phone_start" />
+    </LinearLayout>
 
-    </RelativeLayout>
-
-    <TextView
-        android:id="@+id/detail_title_name"
-        style="@style/text_view_info"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
-        android:layout_marginTop="@dimen/margin_8"
-        tools:text="Hotel de la Bonne Esperance" />
-
-    <TextView
-        android:id="@+id/detail_desc"
-        style="@style/text_view_info"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_8"
-        tools:text="Hotel Made in Louise is a three-star hotel located just 300 meters from Avenue Louise in Brussels. From the Louise metro station, you can easily travel through the beautiful city of Brussels. The European Parliament is only a 15-minute walk from the hotel. The 39 modern rooms at the Hotel Made in Louise have a bathroom with a rain shower and free toiletries. Some rooms have bathtubs and other rooms have lovely views of the courtyard. Enjoy the freshly prepared breakfast buffet. There are good restaurants near the hotele" />
-
-</LinearLayout>
+</ScrollView>

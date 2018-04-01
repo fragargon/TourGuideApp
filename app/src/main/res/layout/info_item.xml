@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/margin_8"
-    android:layout_margin="@dimen/margin_4"
     android:background="@drawable/background_blur"
     android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_4"
             android:orientation="horizontal">
 
             <ImageView
@@ -32,9 +31,9 @@
                 style="@style/text_view_info"
                 android:textSize="@dimen/text_view_size_48"
                 android:textColor="@color/colorPrimaryDark"
-                android:layout_gravity="center_vertical|center_horizontal"
                 android:fontFamily="@font/marker"
-                tools:text="@tools:sample/lorem"/>
+                tools:text="@tools:sample/lorem"
+                android:background="@drawable/background_blur"/>
         </RelativeLayout>
 
         <TextView
@@ -42,7 +41,8 @@
             style="@style/text_view_info"
             android:textSize="@dimen/text_view_size_16"
             android:textColor="@color/colorAccent"
-            android:fontFamily="@font/comiccity"
-            tools:text="@tools:sample/lorem/random"/>
+            android:fontFamily="@font/jon_sans"
+            tools:text="@tools:sample/lorem/random"
+            android:background="@drawable/background_blur"/>
 
 </LinearLayout>
