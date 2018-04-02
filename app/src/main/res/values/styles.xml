@@ -9,8 +9,10 @@
     </style>
 
     <!-- App bar style -->
-    <style name="TourGuideAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="android:endColor">@color/opaque_white</item>
+    <style name="TitleBarTheme" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!-- Tab layout style -->
@@ -24,11 +26,24 @@
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:color">#9e9e9e</item>
     </style>
+    
+    <!-- Common styles layout attributes -->
+    <style name="match_all">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="match_width">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wrap_all">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+    </style>
 
+    <!-- specific styles -->
     <!-- Text view style list view-->
-    <style name="text_list_view">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+    <style name="text_list_view" parent="match_all">
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginBottom">@dimen/margin_8</item>
         <item name="android:layout_marginLeft">@dimen/margin_8</item>
@@ -36,40 +51,32 @@
     </style>
 
     <!-- Text view style portrait -->
-    <style name="text_view_portrait">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:gravity">center_horizontal|center_vertical</item>
+    <style name="text_view_portrait" parent="match_all">
         <item name="android:layout_margin">@dimen/margin_8</item>
-        <item name="android:textColor">@color/opaque_white</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:textSize">@dimen/text_view_size_24</item>
         <item name="android:fontFamily">@font/marker</item>
+        <item name="android:textColor">@color/opaque_white</item>
     </style>
 
     <!-- Text view style landscape -->
-    <style name="text_view_landscape">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center_horizontal|center_vertical</item>
+    <style name="text_view_landscape" parent="match_width">
         <item name="android:layout_margin">@dimen/margin_8</item>
-        <item name="android:textColor">@color/opaque_white</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:textSize">@dimen/text_view_size_24</item>
         <item name="android:fontFamily">@font/marker</item>
+        <item name="android:textColor">@color/opaque_white</item>
     </style>
 
     <!-- Text view style info -->
-    <style name="text_view_info">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="text_view_info" parent="match_width">
         <item name="android:layout_marginLeft">@dimen/margin_4</item>
         <item name="android:layout_marginRight">@dimen/margin_4</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
     </style>
 
     <!-- Text view style detail -->
-    <style name="text_view_detail">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="text_view_detail" parent="match_width">
         <item name="android:padding">@dimen/margin_4</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:fontFamily">@font/jon_sans</item>
@@ -77,9 +84,7 @@
     </style>
 
     <!-- Text view style detail landscape -->
-    <style name="text_view_detail_landscape">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="text_view_detail_landscape" parent="wrap_all">
         <item name="android:padding">@dimen/margin_4</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:fontFamily">@font/jon_sans</item>

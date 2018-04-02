@@ -21,9 +21,11 @@
         <!-- A child of the main activity -->
         <activity
             android:name=".PagerActivity"
-            android:label="@string/pager_name"
+            android:label="@string/header_text"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".DetailActivity"></activity>
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".PagerActivity"/>
     </application>
 
 </manifest>

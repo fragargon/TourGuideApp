@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
-    <string name="pager_name">Tour</string>
     <!-- string main activity -->
     <string name="header_text">Brussels City Tour</string>
     <string name="footer_header">Belgium</string>
