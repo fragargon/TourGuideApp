@@ -1,18 +1,9 @@
 <resources>
     <string name="app_name">TourGuideApp</string>
     <string name="pager_name">Tour</string>
-    <!-- string for tabs -->
-    <string name="info">Info</string>
-    <string name="hotels">Hotels</string>
-    <string name="food">Food</string>
-    <string name="bar">Bar</string>
-    <string name="events">Events</string>
-    <string name="places">Places</string>
     <!-- string main activity -->
     <string name="header_text">Brussels City Tour</string>
     <string name="footer_header">Belgium</string>
     <!-- String detail activity -->
     <string name="button_web">Web Site</string>
-    <string name="get_location">OPEN MAPS</string>
-    <string name="call_them">CALL THEM</string>
 </resources>

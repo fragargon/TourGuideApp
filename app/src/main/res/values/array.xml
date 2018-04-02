@@ -428,11 +428,11 @@
         <item>1000 brussels</item>
         <item>1000 brussels</item>
         <item>1000 brussels</item>
-        <item>Bruxelles-Les-Bains, Quai des Péniches, Bruxelles</item>
-        <item>grand-place bruxelles</item>
-        <item>Porte de Hal, Saint-Gilles</item>
+        <item>Bruxelles-Les-Bains,\n Quai des Péniches,\n Bruxelles</item>
+        <item>grand-place\n bruxelles</item>
+        <item>Porte de Hal,\n Saint-Gilles</item>
         <item>1000 brussels</item>
-        <item>Bruxelles-Midi, Avenue Fonsny, Bruxelles</item>
+        <item>Bruxelles-Midi,\n Avenue Fonsny,\n Bruxelles</item>
     </string-array>
     <string-array name="tel_4">
         <item>NA</item>
@@ -517,14 +517,14 @@
         <item>Galeries Royales St-Hubert</item>
     </string-array>
     <string-array name="address_5">
-        <item>Grand Place 1000, Bruxelles</item>
-        <item>Atomium, Square de l'Atomium, Bruxelles</item>
-        <item>Cinquantenaire, Bruxelles</item>
-        <item>Cathédrale Saints-Michel-et-Gudule, Place Sainte-Gudule, Bruxelles</item>
-        <item>Manneken Pis, Bruxelles</item>
-        <item>Royal Museums of Fine Arts of Belgium, Rue de la Régence, Bruxelles</item>
-        <item>Sablon Antiques Center, Place du Grand Sablon, Bruxelles</item>
-        <item>Galeries St. Hubert, Rue du Marché aux Herbes, Bruxelles</item>
+        <item>Grand Place\n 1000, Bruxelles</item>
+        <item>Atomium,\nSquare de l\'Atomium,\n Bruxelles</item>
+        <item>Cinquantenaire,\n Bruxelles</item>
+        <item>Cathédrale \nSaints-Michel-et-Gudule,\n Place Sainte-Gudule,\n Bruxelles</item>
+        <item>Manneken Pis,\n Bruxelles</item>
+        <item>Royal Museums of Fine Arts\n of Belgium,\n Rue de la Régence,\n Bruxelles</item>
+        <item>Sablon Antiques Center,\n Place du Grand Sablon,\n Bruxelles</item>
+        <item>Galeries St. Hubert,\n Rue du Marché aux Herbes,\n Bruxelles</item>
     </string-array>
     <string-array name="tel_5">
         <item>NA</item>

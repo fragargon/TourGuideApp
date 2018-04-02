@@ -42,8 +42,7 @@
                         style="@style/text_view_detail_landscape"
                         android:layout_weight="1"
                         android:drawableTop="@drawable/ic_action_home"
-                        android:fontFamily="@font/marker"
-                        android:text="@string/get_location"
+                        android:text="rue de la \nbonne esperance"
                         android:textSize="14sp" />
 
                     <TextView
@@ -51,8 +50,7 @@
                         style="@style/text_view_detail_landscape"
                         android:layout_weight="1"
                         android:drawableTop="@drawable/ic_action_phone_start"
-                        android:fontFamily="@font/marker"
-                        android:text="@string/call_them"
+                        android:text="003225582680"
                         android:textSize="14sp" />
                 </LinearLayout>
 

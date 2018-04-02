@@ -26,8 +26,8 @@ import static com.example.android.tourguideapp.model.Config.PAGES_COUNT;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
-    /** Declare variable to handle the item's position */
-    private String tabTitles[] = new String[PAGES_COUNT];
+    /* Declare variable to handle the item's position */
+    private String [] tabTitles;
 
     /**
      * Create a new {@link PagerAdapter} object
@@ -37,13 +37,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
      */
     public PagerAdapter(Context context, FragmentManager fm) {
         super(fm);
-
-        tabTitles[0] = context.getString(R.string.info);
-        tabTitles[1] = context.getString(R.string.hotels);
-        tabTitles[2] = context.getString(R.string.food);
-        tabTitles[3] = context.getString(R.string.bar);
-        tabTitles[4] = context.getString(R.string.events);
-        tabTitles[5] = context.getString(R.string.places);
+        /* Initialize variable with the string resource */
+        tabTitles = context.getResources().getStringArray(R.array.categories);
     }
 
     /**

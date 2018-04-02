@@ -48,9 +48,11 @@ public class DetailActivity extends AppCompatActivity {
         itemNameView.setText(itemName);
 
         addressView = findViewById(R.id.detail_address);
+        addressView.setText(address);
 
         telView = findViewById(R.id.detail_tel);
         if (chosenItem.hasTel()){
+            telView.setText(tel);
             telView.setVisibility(View.VISIBLE);
         }else {
             telView.setVisibility(View.GONE);

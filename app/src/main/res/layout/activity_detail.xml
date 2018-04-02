@@ -46,8 +46,7 @@
                 android:layout_weight="1"
                 android:drawableTop="@drawable/ic_action_home"
                 android:textSize="14sp"
-                android:text="@string/get_location"
-                android:fontFamily="@font/marker"/>
+                tools:text="rue de la \nbonne esperance"/>
 
             <TextView
                 android:id="@+id/detail_tel"
@@ -55,8 +54,7 @@
                 android:layout_weight="1"
                 android:drawableTop="@drawable/ic_action_phone_start"
                 android:textSize="14sp"
-                android:text="@string/call_them"
-                android:fontFamily="@font/marker"/>
+                tools:text="003225582680"/>
 
         </LinearLayout>
 
