@@ -16,6 +16,7 @@
                 android:id="@+id/detail_image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_margin="@dimen/margin_16"
                 android:scaleType="centerCrop"
                 tools:src="@drawable/hotel_9"
                 android:contentDescription="@string/app_name"/>
