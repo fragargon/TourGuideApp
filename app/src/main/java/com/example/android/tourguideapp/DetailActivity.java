@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +18,8 @@ public class DetailActivity extends AppCompatActivity {
 
     /* declare UI */
     ImageView imageView;
-    TextView titleNameView, itemNameView, webView, telView, addressView, descView;
+    TextView titleNameView, itemNameView, telView, addressView, descView;
+    Button webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
