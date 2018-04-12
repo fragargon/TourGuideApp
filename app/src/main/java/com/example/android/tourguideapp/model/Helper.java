@@ -14,6 +14,14 @@ import java.util.ArrayList;
 public class Helper {
 
     /**
+     * Create a private constructor because no one should ever create a {@link Helper} object.
+     * This class is only meant to hold static variables and methods, which can be accessed
+     * directly from the class name Helper (and an object instance of Helper is not needed).
+     */
+    private Helper() {
+            }
+
+    /**
      *
      * @param context The current context. used to initialize the string arrays.
      * @return return the array list of category grid view.
