@@ -16,7 +16,7 @@ The details screen gives the ability to call , naviguate with maps or open the w
 
 ___________
 
-![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide1.jpeg) hspace="20" ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide2.jpeg)
-![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide3.jpeg)![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide4.jpeg)![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide5.jpeg)![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide6.jpeg)![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide7.jpeg)
+![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide1.jpeg) ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide2.jpeg)
+![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide3.jpeg) ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide4.jpeg) ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide5.jpeg) ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide6.jpeg) ![Alt Text](https://github.com/fragargon/TourGuideApp/raw/master/tourguide7.jpeg)
 
 
